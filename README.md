@@ -1,15 +1,19 @@
 # Khaos
 •	Source Code
-    Khaos is an inter-procedural obfuscation prototype based on LLVM 9.0.1. It mainly contains two passes, fission pass and fusion pass, with a seize of analysis passes and util classes. These codes are mainly in Khaos/llvm/lib/Transforms/CodeProt.
+
+Khaos is an inter-procedural obfuscation prototype based on LLVM 9.0.1. It mainly contains two passes, fission pass and fusion pass, with a seize of analysis passes and util classes. These codes are mainly in Khaos/llvm/lib/Transforms/CodeProt.
+
 InterFunctionShuffleOpt.cpp	Fission pass
-InterFunctionFusion.cpp	Fusion
+
+InterFunctionFusion.cpp	Fusion pass
+
 HarmnessAnalysis.cpp	Performs analysis for deep fusion
-BogusControlFlow.cpp
-Flattening.cpp
-Substitution.cpp	Obfuscation passes from O-LLVM.
+
+BogusControlFlow.cpp, Flattening.cpp, and Substitution.cpp are obfuscation passes from O-LLVM.
 
 •Build & Prebuild
-We suggest using the prebuilt Khaos binaries in release folder, using clang and clang++ as front-end. Khaos has a library for fusion named fusion_helper.o, which is also in prebuild path.
+We suggest using the prebuilt Khaos binaries (tested on ubuntu 20.04) in release folder, using clang and clang++ as front-end. Khaos has a library for fusion named fusion_helper.o, which is also in prebuild path.
+
 Khaos can be rebuilt from source code same as LLVM. We use following command to build Khaos:
 ```
 mkdir build && cd build
