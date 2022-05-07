@@ -33,7 +33,8 @@ Fusion
 ```
 
 FuFi.sep
-```/path/to/Khaos/release/clang -flto -fuse-ld=lld -O2 -mllvm -enable-intershuffle-opt -mllvm -ratio=100  -mllvm -inline-splitted-func -mllvm -enable-interfusion -mllvm -level-deepfusion=2 -mllvm -fissioned-function-only -fno-discard-value-names -w /path/to/Khaos/release/fusion_helper.o xxx.c yyy.c zzz.c
+```
+/path/to/Khaos/release/clang -flto -fuse-ld=lld -O2 -mllvm -enable-intershuffle-opt -mllvm -ratio=100  -mllvm -inline-splitted-func -mllvm -enable-interfusion -mllvm -level-deepfusion=2 -mllvm -fissioned-function-only -fno-discard-value-names -w /path/to/Khaos/release/fusion_helper.o xxx.c yyy.c zzz.c
 ```
 
 FuFi.ori
