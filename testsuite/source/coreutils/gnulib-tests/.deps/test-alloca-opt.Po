@@ -1,0 +1,5 @@
+test-alloca-opt.o: test-alloca-opt.c ../lib/config.h ../lib/alloca.h
+
+../lib/config.h:
+
+../lib/alloca.h:

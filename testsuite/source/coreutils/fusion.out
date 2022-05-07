@@ -1,0 +1,2560 @@
+  GEN      lib/alloca.h
+  GEN      lib/arpa/inet.h
+  GEN      lib/configmake.h
+  GEN      lib/ctype.h
+  GEN      lib/dirent.h
+  GEN      lib/malloc/dynarray.gl.h
+  GEN      lib/malloc/dynarray-skeleton.gl.h
+  GEN      lib/fcntl.h
+  GEN      lib/iconv.h
+  GEN      lib/inttypes.h
+  GEN      lib/langinfo.h
+echo '#include "mini-gmp.h"' >lib/gmp.h-t
+mv lib/gmp.h-t lib/gmp.h
+  GEN      lib/limits.h
+  GEN      lib/locale.h
+  GEN      lib/math.h
+  GEN      lib/netdb.h
+  GEN      lib/poll.h
+  GEN      lib/pthread.h
+  GEN      lib/sched.h
+  GEN      lib/malloc/scratch_buffer.gl.h
+  GEN      lib/selinux/selinux.h
+  GEN      lib/selinux/context.h
+  GEN      lib/selinux/label.h
+  GEN      lib/signal.h
+  GEN      lib/stdio.h
+  GEN      lib/stdlib.h
+  GEN      lib/string.h
+  GEN      lib/sys/ioctl.h
+  GEN      lib/sys/random.h
+  GEN      lib/sys/resource.h
+  GEN      lib/sys/select.h
+  GEN      lib/sys/socket.h
+  GEN      lib/sys/stat.h
+  GEN      lib/sys/time.h
+  GEN      lib/sys/types.h
+  GEN      lib/sys/uio.h
+  GEN      lib/sys/utsname.h
+  GEN      lib/sys/wait.h
+  GEN      lib/termios.h
+  GEN      lib/time.h
+  GEN      lib/unistd.h
+  GEN      lib/unistr.h
+  GEN      lib/unitypes.h
+  GEN      lib/uniwidth.h
+  GEN      lib/utime.h
+  GEN      lib/wchar.h
+  GEN      lib/wctype.h
+make  all-recursive
+make[1]: Entering directory '/home/patrick/coreutils'
+Making all in po
+make[2]: Entering directory '/home/patrick/coreutils/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/patrick/coreutils/po'
+Making all in .
+make[2]: Entering directory '/home/patrick/coreutils'
+  GEN      doc/constants.texi
+  CC       src/coreutils-coreutils.o
+  CC       src/version.o
+  AR       src/libver.a
+  CC       lib/copy-acl.o
+  CC       lib/set-acl.o
+  CC       lib/acl-errno-valid.o
+  CC       lib/acl-internal.o
+  CC       lib/get-permissions.o
+  CC       lib/set-permissions.o
+  CC       lib/allocator.o
+  CC       lib/areadlink.o
+  CC       lib/areadlink-with-size.o
+  CC       lib/areadlinkat.o
+  CC       lib/argmatch.o
+  CC       lib/argv-iter.o
+  CC       lib/openat-proc.o
+  CC       lib/backupfile.o
+  CC       lib/backup-rename.o
+  CC       lib/backup-find.o
+  CC       lib/base32.o
+  CC       lib/base64.o
+  CC       lib/basename-lgpl.o
+  CC       lib/binary-io.o
+  CC       lib/bitrotate.o
+  CC       lib/buffer-lcm.o
+  CC       lib/c-ctype.o
+  CC       lib/c-strcasecmp.o
+  CC       lib/c-strncasecmp.o
+  CC       lib/c-strtod.o
+  CC       lib/c-strtold.o
+  CC       lib/canon-host.o
+  CC       lib/canonicalize.o
+  CC       lib/careadlinkat.o
+  CC       lib/chmodat.o
+  CC       lib/chownat.o
+  CC       lib/cl-strtod.o
+  CC       lib/cl-strtold.o
+  CC       lib/cloexec.o
+  CC       lib/close-stream.o
+  CC       lib/closein.o
+  CC       lib/closeout.o
+  CC       lib/count-leading-zeros.o
+  CC       lib/af_alg.o
+  CC       lib/md5.o
+  CC       lib/sha1.o
+  CC       lib/sha256.o
+  CC       lib/sha512.o
+  CC       lib/cycle-check.o
+  CC       lib/di-set.o
+  CC       lib/opendir-safer.o
+  CC       lib/dirname.o
+  CC       lib/basename.o
+  CC       lib/dirname-lgpl.o
+  CC       lib/stripslash.o
+  CC       lib/dtoastr.o
+  CC       lib/dtotimespec.o
+  CC       lib/malloc/dynarray_at_failure.o
+  CC       lib/malloc/dynarray_emplace_enlarge.o
+  CC       lib/malloc/dynarray_finalize.o
+  CC       lib/malloc/dynarray_resize.o
+  CC       lib/malloc/dynarray_resize_clear.o
+  CC       lib/exclude.o
+  CC       lib/exitfail.o
+  CC       lib/fadvise.o
+  CC       lib/creat-safer.o
+  CC       lib/open-safer.o
+  CC       lib/fd-hook.o
+  CC       lib/fd-reopen.o
+  CC       lib/fd-safer-flag.o
+  CC       lib/dup-safer-flag.o
+  CC       lib/fdutimensat.o
+  CC       lib/file-has-acl.o
+  CC       lib/file-set.o
+  CC       lib/file-type.o
+  CC       lib/filemode.o
+  CC       lib/filenamecat.o
+  CC       lib/filenamecat-lgpl.o
+  CC       lib/filevercmp.o
+  CC       lib/fopen-safer.o
+  CC       lib/fprintftime.o
+  CC       lib/freading.o
+  CC       lib/freadseek.o
+  CC       lib/freopen-safer.o
+  CC       lib/ftoastr.o
+  CC       lib/full-read.o
+  CC       lib/full-write.o
+  CC       lib/gethrxtime.o
+  CC       lib/xtime.o
+  CC       lib/getndelim2.o
+  CC       lib/getprogname.o
+  CC       lib/gettime.o
+  CC       lib/getugroups.o
+  CC       lib/hard-locale.o
+  CC       lib/hash.o
+  CC       lib/hash-pjw.o
+  CC       lib/hash-triple.o
+  CC       lib/hash-triple-simple.o
+  CC       lib/heap.o
+  CC       lib/human.o
+  CC       lib/i-ring.o
+  CC       lib/ialloc.o
+  CC       lib/idcache.o
+  CC       lib/ino-map.o
+  CC       lib/imaxtostr.o
+  CC       lib/inttostr.o
+  CC       lib/offtostr.o
+  CC       lib/uinttostr.o
+  CC       lib/umaxtostr.o
+  CC       lib/ldtoastr.o
+  CC       lib/linebuffer.o
+  CC       lib/localcharset.o
+  CC       lib/glthread/lock.o
+  CC       lib/long-options.o
+  CC       lib/malloca.o
+  CC       lib/math.o
+  CC       lib/mbchar.o
+  CC       lib/mbiter.o
+  CC       lib/mbsalign.o
+  CC       lib/mbscasecmp.o
+  CC       lib/mbschr.o
+  CC       lib/mbslen.o
+  CC       lib/mbsstr.o
+  CC       lib/mbswidth.o
+  CC       lib/mbuiter.o
+  CC       lib/memcasecmp.o
+  CC       lib/memchr2.o
+  CC       lib/memcmp2.o
+  CC       lib/memcoll.o
+  CC       lib/mgetgroups.o
+  CC       lib/mkancesdirs.o
+  CC       lib/dirchownmod.o
+  CC       lib/mkdir-p.o
+  CC       lib/modechange.o
+  CC       lib/mpsort.o
+  CC       lib/nproc.o
+  CC       lib/nstrftime.o
+  CC       lib/openat-die.o
+  CC       lib/openat-safer.o
+  CC       lib/opendirat.o
+  CC       lib/parse-datetime.o
+  CC       lib/physmem.o
+  CC       lib/pipe2.o
+  CC       lib/posixtm.o
+  CC       lib/posixver.o
+  CC       lib/printf-frexp.o
+  CC       lib/printf-frexpl.o
+  CC       lib/priv-set.o
+  CC       lib/progname.o
+  CC       lib/propername.o
+  CC       lib/qcopy-acl.o
+  CC       lib/qset-acl.o
+  CC       lib/quotearg.o
+  CC       lib/randint.o
+  CC       lib/randperm.o
+  CC       lib/randread.o
+  CC       lib/rand-isaac.o
+  CC       lib/read-file.o
+  CC       lib/readtokens.o
+  CC       lib/readtokens0.o
+  CC       lib/renameatu.o
+  CC       lib/root-dev-ino.o
+  CC       lib/safe-read.o
+  CC       lib/safe-write.o
+  CC       lib/same.o
+  CC       lib/save-cwd.o
+  CC       lib/savedir.o
+  CC       lib/savewd.o
+  CC       lib/malloc/scratch_buffer_dupfree.o
+  CC       lib/malloc/scratch_buffer_grow.o
+  CC       lib/malloc/scratch_buffer_grow_preserve.o
+  CC       lib/malloc/scratch_buffer_set_array_size.o
+  CC       lib/selinux-at.o
+  CC       lib/se-context.o
+  CC       lib/se-label.o
+  CC       lib/se-selinux.o
+  CC       lib/setlocale_null.o
+  CC       lib/settime.o
+  CC       lib/sig-handler.o
+  CC       lib/sockets.o
+  CC       lib/stat-time.o
+  CC       lib/statat.o
+  CC       lib/mkstemp-safer.o
+  CC       lib/striconv.o
+  CC       lib/strnlen1.o
+  CC       lib/strintcmp.o
+  CC       lib/strnumcmp.o
+  CC       lib/sys_socket.o
+  CC       lib/tempname.o
+  CC       lib/glthread/threadlib.o
+  CC       lib/timespec.o
+  CC       lib/glthread/tls.o
+  CC       lib/trim.o
+  CC       lib/u64.o
+  CC       lib/unicodeio.o
+  CC       lib/unistd.o
+  CC       lib/dup-safer.o
+  CC       lib/fd-safer.o
+  CC       lib/pipe-safer.o
+  CC       lib/unistr/u8-mbtoucr.o
+  CC       lib/unistr/u8-uctomb.o
+  CC       lib/unistr/u8-uctomb-aux.o
+  CC       lib/uniwidth/width.o
+  CC       lib/unlinkdir.o
+  CC       lib/userspec.o
+  CC       lib/utimecmp.o
+  CC       lib/utimens.o
+  CC       lib/verror.o
+  CC       lib/version-etc.o
+  CC       lib/version-etc-fsf.o
+  CC       lib/wctype-h.o
+  CC       lib/write-any-file.o
+  CC       lib/xmalloc.o
+  CC       lib/xalloc-die.o
+  CC       lib/xbinary-io.o
+  CC       lib/xdectoimax.o
+  CC       lib/xdectoumax.o
+  CC       lib/xfts.o
+  CC       lib/xgetcwd.o
+  CC       lib/xgetgroups.o
+  CC       lib/xgethostname.o
+  CC       lib/xmemcoll.o
+  CC       lib/xnanosleep.o
+  CC       lib/xprintf.o
+  CC       lib/xreadlink.o
+  CC       lib/xsize.o
+  CC       lib/xstriconv.o
+  CC       lib/xstrtod.o
+  CC       lib/xstrtoimax.o
+  CC       lib/xstrtol.o
+  CC       lib/xstrtoul.o
+  CC       lib/xstrtol-error.o
+  CC       lib/xstrtold.o
+  CC       lib/xstrtoumax.o
+  CC       lib/xvasprintf.o
+  CC       lib/xasprintf.o
+  CC       lib/yesno.o
+  CC       lib/asnprintf.o
+  CC       lib/chdir-long.o
+  CC       lib/fchmodat.o
+  CC       lib/fclose.o
+  CC       lib/fcntl.o
+  CC       lib/fflush.o
+  CC       lib/fpurge.o
+  CC       lib/freadahead.o
+  CC       lib/freadptr.o
+  CC       lib/free.o
+  CC       lib/fseek.o
+  CC       lib/fseeko.o
+  CC       lib/fseterr.o
+  CC       lib/fsusage.o
+  CC       lib/fts.o
+  CC       lib/isapipe.o
+  CC       lib/lchmod.o
+  CC       lib/mbrlen.o
+  CC       lib/mbrtowc.o
+  CC       lib/mini-gmp-gnulib.o
+  CC       lib/mktime.o
+  CC       lib/mountlist.o
+  CC       lib/nanosleep.o
+  CC       lib/obstack.o
+  CC       lib/printf-args.o
+  CC       lib/printf-parse.o
+  CC       lib/readutmp.o
+  CC       lib/regex.o
+  CC       lib/sig2str.o
+  CC       lib/time_rz.o
+  CC       lib/vasnprintf.o
+  AR       lib/libcoreutils.a
+  CC       src/libsinglebin_chroot_a-chroot.o
+  AR       src/libsinglebin_chroot.a
+  CC       src/libsinglebin_hostid_a-hostid.o
+  AR       src/libsinglebin_hostid.a
+  CC       src/libsinglebin_timeout_a-timeout.o
+  CC       src/libsinglebin_timeout_a-operand2sig.o
+  AR       src/libsinglebin_timeout.a
+  CC       src/libsinglebin_nice_a-nice.o
+  AR       src/libsinglebin_nice.a
+  CC       src/libsinglebin_who_a-who.o
+  AR       src/libsinglebin_who.a
+  CC       src/libsinglebin_users_a-users.o
+  AR       src/libsinglebin_users.a
+  CC       src/libsinglebin_pinky_a-pinky.o
+  AR       src/libsinglebin_pinky.a
+  CC       src/libsinglebin_uptime_a-uptime.o
+  AR       src/libsinglebin_uptime.a
+  CC       src/libsinglebin_stty_a-stty.o
+  AR       src/libsinglebin_stty.a
+  CC       src/libsinglebin_df_a-df.o
+  CC       src/libsinglebin_df_a-find-mount-point.o
+  AR       src/libsinglebin_df.a
+  CC       src/libsinglebin___a-lbracket.o
+  AR       src/libsinglebin__.a
+  CC       src/libsinglebin_b2sum_a-md5sum.o
+  CC       src/blake2/libsinglebin_b2sum_a-blake2b-ref.o
+  CC       src/blake2/libsinglebin_b2sum_a-b2sum.o
+  AR       src/libsinglebin_b2sum.a
+  CC       src/libsinglebin_base64_a-basenc.o
+  AR       src/libsinglebin_base64.a
+  CC       src/libsinglebin_base32_a-basenc.o
+  AR       src/libsinglebin_base32.a
+  CC       src/libsinglebin_basenc_a-basenc.o
+  AR       src/libsinglebin_basenc.a
+  CC       src/libsinglebin_basename_a-basename.o
+  AR       src/libsinglebin_basename.a
+  CC       src/libsinglebin_cat_a-cat.o
+  AR       src/libsinglebin_cat.a
+  CC       src/libsinglebin_chcon_a-chcon.o
+  AR       src/libsinglebin_chcon.a
+  CC       src/libsinglebin_chgrp_a-chgrp.o
+  CC       src/libsinglebin_chgrp_a-chown-core.o
+  AR       src/libsinglebin_chgrp.a
+  CC       src/libsinglebin_chmod_a-chmod.o
+  AR       src/libsinglebin_chmod.a
+  CC       src/libsinglebin_chown_a-chown.o
+  CC       src/libsinglebin_chown_a-chown-core.o
+  AR       src/libsinglebin_chown.a
+  CC       src/libsinglebin_cksum_a-cksum.o
+  CC       src/libcksum_pclmul_a-cksum_pclmul.o
+  AR       src/libcksum_pclmul.a
+  AR       src/libsinglebin_cksum.a
+  CC       src/libsinglebin_comm_a-comm.o
+  AR       src/libsinglebin_comm.a
+  CC       src/libsinglebin_cp_a-cp.o
+  CC       src/libsinglebin_cp_a-copy.o
+  CC       src/libsinglebin_cp_a-cp-hash.o
+  CC       src/libsinglebin_cp_a-force-link.o
+  CC       src/libsinglebin_cp_a-selinux.o
+  AR       src/libsinglebin_cp.a
+  CC       src/libsinglebin_csplit_a-csplit.o
+  AR       src/libsinglebin_csplit.a
+  CC       src/libsinglebin_cut_a-cut.o
+  CC       src/libsinglebin_cut_a-set-fields.o
+  AR       src/libsinglebin_cut.a
+  CC       src/libsinglebin_date_a-date.o
+  AR       src/libsinglebin_date.a
+  CC       src/libsinglebin_dd_a-dd.o
+  AR       src/libsinglebin_dd.a
+  CC       src/libsinglebin_dir_a-coreutils-dir.o
+  CC       src/libsinglebin_ls_a-ls.o
+  CC       src/libsinglebin_ls_a-ls-ls.o
+  AR       src/libsinglebin_ls.a
+  AR       src/libsinglebin_dir.a
+  CC       src/libsinglebin_dircolors_a-dircolors.o
+  AR       src/libsinglebin_dircolors.a
+  CC       src/libsinglebin_dirname_a-dirname.o
+  AR       src/libsinglebin_dirname.a
+  CC       src/libsinglebin_du_a-du.o
+  AR       src/libsinglebin_du.a
+  CC       src/libsinglebin_echo_a-echo.o
+  AR       src/libsinglebin_echo.a
+  CC       src/libsinglebin_env_a-env.o
+  CC       src/libsinglebin_env_a-operand2sig.o
+  AR       src/libsinglebin_env.a
+  CC       src/libsinglebin_expand_a-expand.o
+  CC       src/libsinglebin_expand_a-expand-common.o
+  AR       src/libsinglebin_expand.a
+  CC       src/libsinglebin_expr_a-expr.o
+  AR       src/libsinglebin_expr.a
+  CC       src/libsinglebin_factor_a-factor.o
+  AR       src/libsinglebin_factor.a
+  CC       src/libsinglebin_false_a-false.o
+  AR       src/libsinglebin_false.a
+  CC       src/libsinglebin_fmt_a-fmt.o
+  AR       src/libsinglebin_fmt.a
+  CC       src/libsinglebin_fold_a-fold.o
+  AR       src/libsinglebin_fold.a
+  CC       src/libsinglebin_ginstall_a-install.o
+  CC       src/libsinglebin_ginstall_a-prog-fprintf.o
+  CC       src/libsinglebin_ginstall_a-copy.o
+  CC       src/libsinglebin_ginstall_a-cp-hash.o
+  CC       src/libsinglebin_ginstall_a-force-link.o
+  CC       src/libsinglebin_ginstall_a-selinux.o
+  AR       src/libsinglebin_ginstall.a
+  CC       src/libsinglebin_groups_a-groups.o
+  CC       src/libsinglebin_groups_a-group-list.o
+  AR       src/libsinglebin_groups.a
+  CC       src/libsinglebin_head_a-head.o
+  AR       src/libsinglebin_head.a
+  CC       src/libsinglebin_id_a-id.o
+  CC       src/libsinglebin_id_a-group-list.o
+  AR       src/libsinglebin_id.a
+  CC       src/libsinglebin_join_a-join.o
+  AR       src/libsinglebin_join.a
+  CC       src/libsinglebin_kill_a-kill.o
+  CC       src/libsinglebin_kill_a-operand2sig.o
+  AR       src/libsinglebin_kill.a
+  CC       src/libsinglebin_link_a-link.o
+  AR       src/libsinglebin_link.a
+  CC       src/libsinglebin_ln_a-ln.o
+  CC       src/libsinglebin_ln_a-force-link.o
+  CC       src/libsinglebin_ln_a-relpath.o
+  AR       src/libsinglebin_ln.a
+  CC       src/libsinglebin_logname_a-logname.o
+  AR       src/libsinglebin_logname.a
+  CC       src/libsinglebin_md5sum_a-md5sum.o
+  AR       src/libsinglebin_md5sum.a
+  CC       src/libsinglebin_mkdir_a-mkdir.o
+  CC       src/libsinglebin_mkdir_a-prog-fprintf.o
+  CC       src/libsinglebin_mkdir_a-selinux.o
+  AR       src/libsinglebin_mkdir.a
+  CC       src/libsinglebin_mkfifo_a-mkfifo.o
+  CC       src/libsinglebin_mkfifo_a-selinux.o
+  AR       src/libsinglebin_mkfifo.a
+  CC       src/libsinglebin_mknod_a-mknod.o
+  CC       src/libsinglebin_mknod_a-selinux.o
+  AR       src/libsinglebin_mknod.a
+  CC       src/libsinglebin_mktemp_a-mktemp.o
+  AR       src/libsinglebin_mktemp.a
+  CC       src/libsinglebin_mv_a-mv.o
+  CC       src/libsinglebin_mv_a-remove.o
+  CC       src/libsinglebin_mv_a-copy.o
+  CC       src/libsinglebin_mv_a-cp-hash.o
+  CC       src/libsinglebin_mv_a-force-link.o
+  CC       src/libsinglebin_mv_a-selinux.o
+  AR       src/libsinglebin_mv.a
+  CC       src/libsinglebin_nl_a-nl.o
+  AR       src/libsinglebin_nl.a
+  CC       src/libsinglebin_nproc_a-nproc.o
+  AR       src/libsinglebin_nproc.a
+  CC       src/libsinglebin_nohup_a-nohup.o
+  AR       src/libsinglebin_nohup.a
+  CC       src/libsinglebin_numfmt_a-numfmt.o
+  CC       src/libsinglebin_numfmt_a-set-fields.o
+  AR       src/libsinglebin_numfmt.a
+  CC       src/libsinglebin_od_a-od.o
+  AR       src/libsinglebin_od.a
+  CC       src/libsinglebin_paste_a-paste.o
+  AR       src/libsinglebin_paste.a
+  CC       src/libsinglebin_pathchk_a-pathchk.o
+  AR       src/libsinglebin_pathchk.a
+  CC       src/libsinglebin_pr_a-pr.o
+  AR       src/libsinglebin_pr.a
+  CC       src/libsinglebin_printenv_a-printenv.o
+  AR       src/libsinglebin_printenv.a
+  CC       src/libsinglebin_printf_a-printf.o
+  AR       src/libsinglebin_printf.a
+  CC       src/libsinglebin_ptx_a-ptx.o
+  AR       src/libsinglebin_ptx.a
+  CC       src/libsinglebin_pwd_a-pwd.o
+  AR       src/libsinglebin_pwd.a
+  CC       src/libsinglebin_readlink_a-readlink.o
+  AR       src/libsinglebin_readlink.a
+  CC       src/libsinglebin_realpath_a-realpath.o
+  CC       src/libsinglebin_realpath_a-relpath.o
+  AR       src/libsinglebin_realpath.a
+  CC       src/libsinglebin_rm_a-rm.o
+  CC       src/libsinglebin_rm_a-remove.o
+  AR       src/libsinglebin_rm.a
+  CC       src/libsinglebin_rmdir_a-rmdir.o
+  CC       src/libsinglebin_rmdir_a-prog-fprintf.o
+  AR       src/libsinglebin_rmdir.a
+  CC       src/libsinglebin_runcon_a-runcon.o
+  AR       src/libsinglebin_runcon.a
+  CC       src/libsinglebin_seq_a-seq.o
+  AR       src/libsinglebin_seq.a
+  CC       src/libsinglebin_sha1sum_a-md5sum.o
+  AR       src/libsinglebin_sha1sum.a
+  CC       src/libsinglebin_sha224sum_a-md5sum.o
+  AR       src/libsinglebin_sha224sum.a
+  CC       src/libsinglebin_sha256sum_a-md5sum.o
+  AR       src/libsinglebin_sha256sum.a
+  CC       src/libsinglebin_sha384sum_a-md5sum.o
+  AR       src/libsinglebin_sha384sum.a
+  CC       src/libsinglebin_sha512sum_a-md5sum.o
+  AR       src/libsinglebin_sha512sum.a
+  CC       src/libsinglebin_shred_a-shred.o
+  AR       src/libsinglebin_shred.a
+  CC       src/libsinglebin_shuf_a-shuf.o
+  AR       src/libsinglebin_shuf.a
+  CC       src/libsinglebin_sleep_a-sleep.o
+  AR       src/libsinglebin_sleep.a
+  CC       src/libsinglebin_sort_a-sort.o
+  AR       src/libsinglebin_sort.a
+  CC       src/libsinglebin_split_a-split.o
+  AR       src/libsinglebin_split.a
+  CC       src/libsinglebin_stat_a-stat.o
+  CC       src/libsinglebin_stat_a-find-mount-point.o
+  AR       src/libsinglebin_stat.a
+  CC       src/libsinglebin_sum_a-sum.o
+  AR       src/libsinglebin_sum.a
+  CC       src/libsinglebin_sync_a-sync.o
+  AR       src/libsinglebin_sync.a
+  CC       src/libsinglebin_tac_a-tac.o
+  AR       src/libsinglebin_tac.a
+  CC       src/libsinglebin_tail_a-tail.o
+  AR       src/libsinglebin_tail.a
+  CC       src/libsinglebin_tee_a-tee.o
+  AR       src/libsinglebin_tee.a
+  CC       src/libsinglebin_test_a-test.o
+  AR       src/libsinglebin_test.a
+  CC       src/libsinglebin_touch_a-touch.o
+  AR       src/libsinglebin_touch.a
+  CC       src/libsinglebin_tr_a-tr.o
+  AR       src/libsinglebin_tr.a
+  CC       src/libsinglebin_true_a-true.o
+  AR       src/libsinglebin_true.a
+  CC       src/libsinglebin_truncate_a-truncate.o
+  AR       src/libsinglebin_truncate.a
+  CC       src/libsinglebin_tsort_a-tsort.o
+  AR       src/libsinglebin_tsort.a
+  CC       src/libsinglebin_tty_a-tty.o
+  AR       src/libsinglebin_tty.a
+  CC       src/libsinglebin_uname_a-uname.o
+  CC       src/libsinglebin_uname_a-uname-uname.o
+  AR       src/libsinglebin_uname.a
+  CC       src/libsinglebin_unexpand_a-unexpand.o
+  CC       src/libsinglebin_unexpand_a-expand-common.o
+  AR       src/libsinglebin_unexpand.a
+  CC       src/libsinglebin_uniq_a-uniq.o
+  AR       src/libsinglebin_uniq.a
+  CC       src/libsinglebin_unlink_a-unlink.o
+  AR       src/libsinglebin_unlink.a
+  CC       src/libsinglebin_vdir_a-coreutils-vdir.o
+  AR       src/libsinglebin_vdir.a
+  CC       src/libsinglebin_wc_a-wc.o
+  CC       src/libwc_avx2_a-wc_avx2.o
+  AR       src/libwc_avx2.a
+  AR       src/libsinglebin_wc.a
+  CC       src/libsinglebin_whoami_a-whoami.o
+  AR       src/libsinglebin_whoami.a
+  CC       src/libsinglebin_yes_a-yes.o
+  AR       src/libsinglebin_yes.a
+  GEN      src/coreutils_shebangs
+  CCLD     src/coreutils
+deep level > 1
+HarmnessAnalysis
+total 34354 found
+InterFunctionFusion
+Deep Fusion Level: 2
+FuncsMayPropagate: userid_compare
+FuncsMayPropagate: compare_ranges
+FuncsMayPropagate: maybe_close_stdout
+FuncsMayPropagate: lbuf_flush
+FuncsMayPropagate: free_spareline
+FuncsMayPropagate: maybe_close_stdout.4127
+FuncsMayPropagate: compare_occurs
+FuncsMayPropagate: compare_words
+FuncsMayPropagate: clear_random_data
+FuncsMayPropagate: struct_month_cmp
+FuncsMayPropagate: exit_cleanup
+FuncsMayPropagate: sortlines_thread
+FuncsMayPropagate: close_stdin
+FuncsMayPropagate: close_stdout
+We do not merge struct type for now
+merging cleanup and chld
+STATISTICS: merging cleanup and chld arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+STATISTICS: HarmlessBB count6 0
+no suitable harmless basic block found, return
+merging unblock_signal and settimeout
+STATISTICS: merging unblock_signal and settimeout arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 3
+they are too small to merge
+merging set_window_size and display_window_size
+STATISTICS: merging set_window_size and display_window_size arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count4 1
+they are too small to merge
+merging single_binary_main__ and unary_operator
+STATISTICS: merging single_binary_main__ and unary_operator arg size1: 2 arg size2: 0
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 11
+STATISTICS: deepFusionLevel2 failed
+merging binary_operator and digest_file
+STATISTICS: merging binary_operator and digest_file arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count8 0
+no suitable harmless basic block found, return
+merging blake2b_init and blake2b_final
+STATISTICS: merging blake2b_init and blake2b_final arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 1
+they are too small to merge
+merging memset and isbase64url
+STATISTICS: merging memset and isbase64url arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 3
+STATISTICS: deepFusionLevel2 succeed
+merging isbase32hex and isbase16
+STATISTICS: merging isbase32hex and isbase16 arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 succeed
+merging isbase2 and base64_length_wrapper
+STATISTICS: merging isbase2 and base64_length_wrapper arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 succeed
+merging base32_length_wrapper and base16_length
+STATISTICS: merging base32_length_wrapper and base16_length arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 succeed
+merging base2_length and z85_length
+STATISTICS: merging base2_length and z85_length arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 succeed
+merging check_order and create_hard_link
+STATISTICS: merging check_order and create_hard_link arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+STATISTICS: HarmlessBB count1 0
+no suitable harmless basic block found, return
+merging create_hole and set_owner
+STATISTICS: merging create_hole and set_owner arg size1: 4 arg size2: 6
+STATISTICS: fusion function arg size: 7
+no harmless basic block found, return
+merging cached_umask and forget_created
+STATISTICS: merging cached_umask and forget_created arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 1
+they are too small to merge
+merging force_linkat and force_symlinkat
+STATISTICS: merging force_linkat and force_symlinkat arg size1: 7 arg size2: 5
+STATISTICS: fusion function arg size: 8
+STATISTICS: HarmlessBB count2 2
+We cannot merge entry BB
+merging close_output_file and show_date
+STATISTICS: merging close_output_file and show_date arg size1: 0 arg size2: 4
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count4 2
+We cannot merge entry BB
+merging parse_integer and alloc_obuf
+STATISTICS: merging parse_integer and alloc_obuf arg size1: 2 arg size2: 0
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count3 1
+STATISTICS: deepFusionLevel2 failed
+merging print_xfer_stats and invalidate_cache
+STATISTICS: merging print_xfer_stats and invalidate_cache arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count2 4
+We cannot merge entry BB
+merging print_stats and print_size
+STATISTICS: merging print_stats and print_size arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count3 1
+they are too small to merge
+merging _usage_echo and add_tab_stop
+STATISTICS: merging _usage_echo and add_tab_stop arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+STATISTICS: HarmlessBB count1 1
+We won't merge entry BB's successor
+merging cleanup_file_list_stdin and mulredc2
+STATISTICS: merging cleanup_file_list_stdin and mulredc2 arg size1: 0 arg size2: 8
+STATISTICS: fusion function arg size: 9
+STATISTICS: HarmlessBB count1 3
+We won't merge entry BB's successor
+merging single_binary_main_false and mkancesdirs_safe_wd
+STATISTICS: merging single_binary_main_false and mkancesdirs_safe_wd arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count1 4
+STATISTICS: deepFusionLevel2 succeed
+merging print_group and add_file_name
+STATISTICS: merging print_group and add_file_name arg size1: 2 arg size2: 6
+STATISTICS: fusion function arg size: 7
+STATISTICS: HarmlessBB count1 4
+STATISTICS: deepFusionLevel2 failed
+merging keycmp and single_binary_main_link
+STATISTICS: merging keycmp and single_binary_main_link arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count2 2
+STATISTICS: deepFusionLevel2 failed
+merging do_link and stophandler
+STATISTICS: merging do_link and stophandler arg size1: 5 arg size2: 1
+STATISTICS: fusion function arg size: 6
+STATISTICS: HarmlessBB count20 1
+We cannot merge entry BB
+merging sighandler and print_file_name_and_frills
+STATISTICS: merging sighandler and print_file_name_and_frills arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 6
+We cannot merge entry BB
+merging length_of_file_name_and_frills and strcmp_width
+STATISTICS: merging length_of_file_name_and_frills and strcmp_width arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count9 2
+We cannot merge entry BB
+merging rev_strcmp_width and cmp_width
+STATISTICS: merging rev_strcmp_width and cmp_width arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count2 2
+STATISTICS: deepFusionLevel2 succeed
+merging do_stat and digest_file.3913
+STATISTICS: merging do_stat and digest_file.3913 arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count3 0
+no suitable harmless basic block found, return
+merging do_statx and prompt
+STATISTICS: merging do_statx and prompt arg size1: 5 arg size2: 6
+STATISTICS: fusion function arg size: 7
+STATISTICS: HarmlessBB count1 12
+STATISTICS: deepFusionLevel2 failed
+merging build_type_arg and unit_to_umax
+STATISTICS: merging build_type_arg and unit_to_umax arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+no harmless basic block found, return
+merging format_address_none and check_and_close
+STATISTICS: merging format_address_none and check_and_close arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+no harmless basic block found, return
+merging first_last_page and getoptarg
+STATISTICS: merging first_last_page and getoptarg arg size1: 3 arg size2: 4
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count6 1
+STATISTICS: deepFusionLevel2 failed
+merging open_file and print_char.4824
+STATISTICS: merging open_file and print_char.4824 arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+no harmless basic block found, return
+merging char_to_clump and digest_file.5517
+STATISTICS: merging char_to_clump and digest_file.5517 arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count10 0
+no suitable harmless basic block found, return
+merging digest_file.5616 and digest_file.5715
+STATISTICS: merging digest_file.5616 and digest_file.5715 arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+no harmless basic block found, return
+merging digest_file.5814 and digest_file.5913
+STATISTICS: merging digest_file.5814 and digest_file.5913 arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+no harmless basic block found, return
+merging dosync and parse_field_count
+STATISTICS: merging dosync and parse_field_count arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+no harmless basic block found, return
+merging reap and move_fd
+STATISTICS: merging reap and move_fd arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count3 1
+STATISTICS: deepFusionLevel2 failed
+merging cwrite and human_time
+STATISTICS: merging cwrite and human_time arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count2 1
+they are too small to merge
+merging fremote and check_fspec
+STATISTICS: merging fremote and check_fspec arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 2
+they are too small to merge
+merging recheck and unary_operator.7002
+STATISTICS: merging recheck and unary_operator.7002 arg size1: 2 arg size2: 0
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count3 11
+STATISTICS: deepFusionLevel2 failed
+merging binary_operator.7014 and is_char_class_member
+STATISTICS: merging binary_operator.7014 and is_char_class_member arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count8 1
+We cannot merge entry BB
+merging single_binary_main_true and single_binary_main_unlink
+STATISTICS: merging single_binary_main_true and single_binary_main_unlink arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 succeed
+merging write_counts and decode_8
+STATISTICS: merging write_counts and decode_8 arg size1: 6 arg size2: 4
+STATISTICS: fusion function arg size: 7
+STATISTICS: HarmlessBB count2 0
+no suitable harmless basic block found, return
+merging c_isalnum and c_iscntrl
+STATISTICS: merging c_isalnum and c_iscntrl arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+no harmless basic block found, return
+merging di_set_insert and di_set_lookup
+STATISTICS: merging di_set_insert and di_set_lookup arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 succeed
+merging fdutimensat and file_has_acl
+STATISTICS: merging fdutimensat and file_has_acl arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+STATISTICS: HarmlessBB count2 0
+no suitable harmless basic block found, return
+merging strmode and heap_default_compare
+STATISTICS: merging strmode and heap_default_compare arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 0
+no suitable harmless basic block found, return
+merging memcmp2 and make_dir_parents
+STATISTICS: merging memcmp2 and make_dir_parents arg size1: 4 arg size2: 10
+STATISTICS: fusion function arg size: 11
+STATISTICS: HarmlessBB count1 8
+STATISTICS: deepFusionLevel2 failed
+merging dirchownmod and debug_print_current_time
+STATISTICS: merging dirchownmod and debug_print_current_time arg size1: 7 arg size2: 2
+STATISTICS: fusion function arg size: 8
+STATISTICS: HarmlessBB count12 2
+STATISTICS: deepFusionLevel2 failed
+merging rpl_pipe2 and free_permission_context
+STATISTICS: merging rpl_pipe2 and free_permission_context arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count3 0
+no suitable harmless basic block found, return
+merging quotearg_n_style and quotearg_n_style_mem
+STATISTICS: merging quotearg_n_style and quotearg_n_style_mem arg size1: 3 arg size2: 4
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count1 1
+We cannot merge entry BB
+merging quotearg_n_options and randperm_bound
+STATISTICS: merging quotearg_n_options and randperm_bound arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 succeed
+merging quotearg_style and quotearg_n_style_colon
+STATISTICS: merging quotearg_style and quotearg_n_style_colon arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 1
+We cannot merge entry BB
+merging read_file and renameatu
+STATISTICS: merging read_file and renameatu arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+STATISTICS: HarmlessBB count1 6
+STATISTICS: deepFusionLevel2 succeed
+merging same_nameat and savewd_chdir
+STATISTICS: merging same_nameat and savewd_chdir arg size1: 4 arg size2: 4
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count2 1
+STATISTICS: deepFusionLevel2 failed
+merging gl_scratch_buffer_grow_preserve and getfileconat
+STATISTICS: merging gl_scratch_buffer_grow_preserve and getfileconat arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+no harmless basic block found, return
+merging lgetfileconat and setfileconat
+STATISTICS: merging lgetfileconat and setfileconat arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count4 4
+We cannot merge entry BB
+merging lsetfileconat and setlocale_null_r
+STATISTICS: merging lsetfileconat and setlocale_null_r arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count4 2
+We cannot merge entry BB
+merging openat_proc_name and fd_safer_flag
+STATISTICS: merging openat_proc_name and fd_safer_flag arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count2 1
+STATISTICS: deepFusionLevel2 succeed
+merging unicode_to_mb and fd_safer
+STATISTICS: merging unicode_to_mb and fd_safer arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count3 1
+We cannot merge entry BB
+merging u8_uctomb_aux and parse_with_separator
+STATISTICS: merging u8_uctomb_aux and parse_with_separator arg size1: 3 arg size2: 6
+STATISTICS: fusion function arg size: 7
+STATISTICS: HarmlessBB count6 2
+STATISTICS: deepFusionLevel2 failed
+merging fdutimens and can_write_any_file
+STATISTICS: merging fdutimens and can_write_any_file arg size1: 3 arg size2: 0
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count16 2
+STATISTICS: deepFusionLevel2 failed
+merging xreallocarray and x2nrealloc
+STATISTICS: merging xreallocarray and x2nrealloc arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 failed
+merging xpalloc and xnumtoimax
+STATISTICS: merging xpalloc and xnumtoimax arg size1: 5 arg size2: 7
+STATISTICS: fusion function arg size: 8
+STATISTICS: HarmlessBB count5 3
+STATISTICS: deepFusionLevel2 failed
+merging xnumtoumax and xstrtod
+STATISTICS: merging xnumtoumax and xstrtod arg size1: 7 arg size2: 4
+STATISTICS: fusion function arg size: 8
+STATISTICS: HarmlessBB count2 1
+STATISTICS: deepFusionLevel2 failed
+merging xstrtoimax and xstrtol
+STATISTICS: merging xstrtoimax and xstrtol arg size1: 5 arg size2: 5
+STATISTICS: fusion function arg size: 6
+STATISTICS: HarmlessBB count1 1
+We cannot merge entry BB
+merging xstrtol_error and xstrtold
+STATISTICS: merging xstrtol_error and xstrtold arg size1: 6 arg size2: 4
+STATISTICS: fusion function arg size: 7
+STATISTICS: HarmlessBB count1 1
+We cannot merge entry BB
+merging rpl_fchmodat and get_fs_usage
+STATISTICS: merging rpl_fchmodat and get_fs_usage arg size1: 4 arg size2: 3
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count4 3
+We cannot merge entry BB
+merging fts_safe_changedir and enter_dir
+STATISTICS: merging fts_safe_changedir and enter_dir arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count2 0
+no suitable harmless basic block found, return
+merging filesystem_type and rpl_fts_set
+STATISTICS: merging filesystem_type and rpl_fts_set arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count2 1
+STATISTICS: deepFusionLevel2 failed
+merging cycle_check and lchmod
+STATISTICS: merging cycle_check and lchmod arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+no harmless basic block found, return
+merging mpn_invert_3by2 and mpz_set_si
+STATISTICS: merging mpn_invert_3by2 and mpz_set_si arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count8 1
+STATISTICS: deepFusionLevel2 succeed
+merging gmp_default_alloc and mpz_add_ui
+STATISTICS: merging gmp_default_alloc and mpz_add_ui arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 1
+they are too small to merge
+merging mpz_div_qr_ui and mpz_invert
+STATISTICS: merging mpz_div_qr_ui and mpz_invert arg size1: 5 arg size2: 3
+STATISTICS: fusion function arg size: 6
+STATISTICS: HarmlessBB count4 5
+STATISTICS: deepFusionLevel2 failed
+merging mpz_powm_ui and peek_token
+STATISTICS: merging mpz_powm_ui and peek_token arg size1: 4 arg size2: 3
+STATISTICS: fusion function arg size: 5
+STATISTICS: HarmlessBB count1 29
+they are too small to merge
+merging re_dfa_add_node and link_nfa_nodes
+STATISTICS: merging re_dfa_add_node and link_nfa_nodes arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 0
+no suitable harmless basic block found, return
+merging peek_token_bracket and rpl_regcomp
+STATISTICS: merging peek_token_bracket and rpl_regcomp arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+STATISTICS: HarmlessBB count1 1
+STATISTICS: deepFusionLevel2 failed
+merging rpl_regexec and gl_dynarray_resize
+STATISTICS: merging rpl_regexec and gl_dynarray_resize arg size1: 5 arg size2: 4
+STATISTICS: fusion function arg size: 6
+STATISTICS: HarmlessBB count1 2
+STATISTICS: deepFusionLevel2 failed
+merging parse_duration and cl_strtod
+STATISTICS: merging parse_duration and cl_strtod arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count4 1
+STATISTICS: deepFusionLevel2 failed
+merging cl_strtold and physmem_total
+STATISTICS: merging cl_strtold and physmem_total arg size1: 2 arg size2: 0
+STATISTICS: fusion function arg size: 3
+STATISTICS: HarmlessBB count1 2
+STATISTICS: deepFusionLevel2 failed
+merging usage and launch_program
+STATISTICS: merging usage and launch_program arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging _usage_chroot and parse_additional_groups
+STATISTICS: merging _usage_chroot and parse_additional_groups arg size1: 1 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging single_binary_main_chroot and _usage_hostid
+STATISTICS: merging single_binary_main_chroot and _usage_hostid arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_hostid and _usage_timeout
+STATISTICS: merging single_binary_main_hostid and _usage_timeout arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_timeout and _usage_nice
+STATISTICS: merging single_binary_main_timeout and _usage_nice arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging operand2sig and single_binary_main_nice
+STATISTICS: merging operand2sig and single_binary_main_nice arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_who and who
+STATISTICS: merging _usage_who and who arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_who and print_line
+STATISTICS: merging single_binary_main_who and print_line arg size1: 2 arg size2: 10
+STATISTICS: fusion function arg size: 11
+merging _usage_users and users
+STATISTICS: merging _usage_users and users arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_users and _usage_pinky
+STATISTICS: merging single_binary_main_users and _usage_pinky arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_pinky and _usage_uptime
+STATISTICS: merging single_binary_main_pinky and _usage_uptime arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_entry and single_binary_main_uptime
+STATISTICS: merging print_entry and single_binary_main_uptime arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging create_fullname and uptime
+STATISTICS: merging create_fullname and uptime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_stty and display_speed
+STATISTICS: merging _usage_stty and display_speed arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_stty and _usage_df
+STATISTICS: merging single_binary_main_stty and _usage_df arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging apply_settings and single_binary_main_df
+STATISTICS: merging apply_settings and single_binary_main_df arg size1: 7 arg size2: 2
+STATISTICS: fusion function arg size: 8
+merging decode_output_arg and replace_control_chars
+STATISTICS: merging decode_output_arg and replace_control_chars arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging replace_invalid_chars and get_dev
+STATISTICS: merging replace_invalid_chars and get_dev arg size1: 1 arg size2: 9
+STATISTICS: fusion function arg size: 10
+merging devlist_hash and devlist_compare
+STATISTICS: merging devlist_hash and devlist_compare arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging devlist_free and find_mount_point
+STATISTICS: merging devlist_free and find_mount_point arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage__ and posixtest
+STATISTICS: merging _usage__ and posixtest arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging beyond and binop
+STATISTICS: merging beyond and binop arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging three_arguments and find_int
+STATISTICS: merging three_arguments and find_int arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging term and _usage_b2sum
+STATISTICS: merging term and _usage_b2sum arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_b2sum and blake2b_stream
+STATISTICS: merging single_binary_main_b2sum and blake2b_stream arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging print_filename and blake2b_update
+STATISTICS: merging print_filename and blake2b_update arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging blake2b_compress and _usage_base64
+STATISTICS: merging blake2b_compress and _usage_base64 arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_base64 and _usage_base32
+STATISTICS: merging single_binary_main_base64 and _usage_base32 arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_base32 and _usage_basenc
+STATISTICS: merging single_binary_main_base32 and _usage_basenc arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_basenc and base64_decode_ctx_wrapper
+STATISTICS: merging single_binary_main_basenc and base64_decode_ctx_wrapper arg size1: 2 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging base64url_decode_ctx_wrapper and base32_decode_ctx_wrapper
+STATISTICS: merging base64url_decode_ctx_wrapper and base32_decode_ctx_wrapper arg size1: 5 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging base32hex_decode_ctx_wrapper and base16_decode_ctx
+STATISTICS: merging base32hex_decode_ctx_wrapper and base16_decode_ctx arg size1: 5 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging base2msbf_decode_ctx and base2lsbf_decode_ctx
+STATISTICS: merging base2msbf_decode_ctx and base2lsbf_decode_ctx arg size1: 5 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging z85_decode_ctx and base64_decode_ctx_init_wrapper
+STATISTICS: merging z85_decode_ctx and base64_decode_ctx_init_wrapper arg size1: 5 arg size2: 1
+STATISTICS: fusion function arg size: 6
+merging base64url_decode_ctx_init_wrapper and base32_decode_ctx_init_wrapper
+STATISTICS: merging base64url_decode_ctx_init_wrapper and base32_decode_ctx_init_wrapper arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging base32hex_decode_ctx_init_wrapper and base16_decode_ctx_init
+STATISTICS: merging base32hex_decode_ctx_init_wrapper and base16_decode_ctx_init arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging base2_decode_ctx_init and z85_decode_ctx_init
+STATISTICS: merging base2_decode_ctx_init and z85_decode_ctx_init arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging base64url_encode and base32hex_encode
+STATISTICS: merging base64url_encode and base32hex_encode arg size1: 4 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging base16_encode and base2msbf_encode
+STATISTICS: merging base16_encode and base2msbf_encode arg size1: 4 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging base2lsbf_encode and z85_encode
+STATISTICS: merging base2lsbf_encode and z85_encode arg size1: 4 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging isz85 and _usage_basename
+STATISTICS: merging isz85 and _usage_basename arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_basename and _usage_cat
+STATISTICS: merging single_binary_main_basename and _usage_cat arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging perform_basename and single_binary_main_cat
+STATISTICS: merging perform_basename and single_binary_main_cat arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging _usage_chcon and _usage_chgrp
+STATISTICS: merging _usage_chcon and _usage_chgrp arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_chcon and single_binary_main_chgrp
+STATISTICS: merging single_binary_main_chcon and single_binary_main_chgrp arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging chopt_init and gid_to_name
+STATISTICS: merging chopt_init and gid_to_name arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging uid_to_name and chown_files
+STATISTICS: merging uid_to_name and chown_files arg size1: 1 arg size2: 7
+STATISTICS: fusion function arg size: 8
+merging user_group_str and _usage_chmod
+STATISTICS: merging user_group_str and _usage_chmod arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_chmod and _usage_chown
+STATISTICS: merging single_binary_main_chmod and _usage_chown arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_chown and _usage_cksum
+STATISTICS: merging single_binary_main_chown and _usage_cksum arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_cksum and cksum_slice8
+STATISTICS: merging single_binary_main_cksum and cksum_slice8 arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging cksum and _usage_comm
+STATISTICS: merging cksum and _usage_comm arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_comm and _usage_cp
+STATISTICS: merging single_binary_main_comm and _usage_cp arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging writeline and single_binary_main_cp
+STATISTICS: merging writeline and single_binary_main_cp arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging decode_preserve_arg and do_copy
+STATISTICS: merging decode_preserve_arg and do_copy arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging target_directory_operand and make_dir_parents_private
+STATISTICS: merging target_directory_operand and make_dir_parents_private arg size1: 4 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging re_protect and set_process_security_ctx
+STATISTICS: merging re_protect and set_process_security_ctx arg size1: 4 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging set_file_security_ctx and dest_info_init
+STATISTICS: merging set_file_security_ctx and dest_info_init arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging src_info_init and copy
+STATISTICS: merging src_info_init and copy arg size1: 1 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging copy_internal and cp_options_default
+STATISTICS: merging copy_internal and cp_options_default arg size1: 10 arg size2: 1
+STATISTICS: fusion function arg size: 11
+merging overwrite_ok and emit_verbose
+STATISTICS: merging overwrite_ok and emit_verbose arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging sparse_copy and chown_failure_ok
+STATISTICS: merging sparse_copy and chown_failure_ok arg size1: 12 arg size2: 1
+STATISTICS: fusion function arg size: 13
+merging src_to_dest_lookup and remember_copied
+STATISTICS: merging src_to_dest_lookup and remember_copied arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging hash_init and src_to_dest_hash
+STATISTICS: merging hash_init and src_to_dest_hash arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging src_to_dest_compare and src_to_dest_free
+STATISTICS: merging src_to_dest_compare and src_to_dest_free arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging try_link and try_symlink
+STATISTICS: merging try_link and try_symlink arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xalloc_die and cleanup.1915
+STATISTICS: merging xalloc_die and cleanup.1915 arg size1: 0 arg size2: 0
+STATISTICS: fusion function arg size: 1
+merging cleanup_fatal and delete_all_files
+STATISTICS: merging cleanup_fatal and delete_all_files arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging make_filename and single_binary_main_csplit
+STATISTICS: merging make_filename and single_binary_main_csplit arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_csplit and create_output_file
+STATISTICS: merging _usage_csplit and create_output_file arg size1: 1 arg size2: 0
+STATISTICS: fusion function arg size: 2
+merging remove_line and save_line_to_file
+STATISTICS: merging remove_line and save_line_to_file arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging find_line and regexp_error
+STATISTICS: merging find_line and regexp_error arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging load_buffer and handle_line_error
+STATISTICS: merging load_buffer and handle_line_error arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging interrupt_handler and _usage_cut
+STATISTICS: merging interrupt_handler and _usage_cut arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_cut and _usage_date
+STATISTICS: merging single_binary_main_cut and _usage_date arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging cut_file and set_fields
+STATISTICS: merging cut_file and set_fields arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_date and _usage_dd
+STATISTICS: merging single_binary_main_date and _usage_dd arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_dd and siginfo_handler
+STATISTICS: merging single_binary_main_dd and siginfo_handler arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging interrupt_handler.2220 and parse_symbols
+STATISTICS: merging interrupt_handler.2220 and parse_symbols arg size1: 1 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging iread and set_fd_flags
+STATISTICS: merging iread and set_fd_flags arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging iread_fullblock and process_signals
+STATISTICS: merging iread_fullblock and process_signals arg size1: 3 arg size2: 0
+STATISTICS: fusion function arg size: 4
+merging skip and iwrite
+STATISTICS: merging skip and iwrite arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+merging quit and alloc_ibuf
+STATISTICS: merging quit and alloc_ibuf arg size1: 0 arg size2: 0
+STATISTICS: fusion function arg size: 1
+merging copy_with_block and copy_with_unblock
+STATISTICS: merging copy_with_block and copy_with_unblock arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging write_output and cleanup.2259
+STATISTICS: merging write_output and cleanup.2259 arg size1: 0 arg size2: 0
+STATISTICS: fusion function arg size: 1
+merging finish_up and single_binary_main_dir
+STATISTICS: merging finish_up and single_binary_main_dir arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_dircolors and dc_parse_stream
+STATISTICS: merging _usage_dircolors and dc_parse_stream arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_dircolors and append_quoted
+STATISTICS: merging single_binary_main_dircolors and append_quoted arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging _usage_dirname and _usage_du
+STATISTICS: merging _usage_dirname and _usage_du arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_dirname and single_binary_main_du
+STATISTICS: merging single_binary_main_dirname and single_binary_main_du arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging emit_ancillary_info and single_binary_main_echo
+STATISTICS: merging emit_ancillary_info and single_binary_main_echo arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_env and _usage_expand
+STATISTICS: merging _usage_env and _usage_expand arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_env and single_binary_main_expand
+STATISTICS: merging single_binary_main_env and single_binary_main_expand arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging parse_signal_action_params and parse_block_signal_params
+STATISTICS: merging parse_signal_action_params and parse_block_signal_params arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging parse_tab_stops and finalize_tab_stops
+STATISTICS: merging parse_tab_stops and finalize_tab_stops arg size1: 1 arg size2: 0
+STATISTICS: fusion function arg size: 2
+merging get_next_tab_column and set_file_list
+STATISTICS: merging get_next_tab_column and set_file_list arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging next_file and emit_tab_list_info
+STATISTICS: merging next_file and emit_tab_list_info arg size1: 1 arg size2: 0
+STATISTICS: fusion function arg size: 2
+merging _usage_expr and eval
+STATISTICS: merging _usage_expr and eval arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_expr and eval1
+STATISTICS: merging single_binary_main_expr and eval1 arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging eval2 and eval4
+STATISTICS: merging eval2 and eval4 arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging eval3 and eval6
+STATISTICS: merging eval3 and eval6 arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging docolon and _usage_factor
+STATISTICS: merging docolon and _usage_factor arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_factor and print_uintmaxes
+STATISTICS: merging single_binary_main_factor and print_uintmaxes arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging print_factors and mp_factor_insert
+STATISTICS: merging print_factors and mp_factor_insert arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging factor and mp_factor
+STATISTICS: merging factor and mp_factor arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging mp_prime_p and prime2_p
+STATISTICS: merging mp_prime_p and prime2_p arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging mp_factor_using_pollard_rho and mp_millerrabin
+STATISTICS: merging mp_factor_using_pollard_rho and mp_millerrabin arg size1: 3 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging factor_using_pollard_rho and gcd2_odd
+STATISTICS: merging factor_using_pollard_rho and gcd2_odd arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging factor_using_pollard_rho2 and millerrabin2
+STATISTICS: merging factor_using_pollard_rho2 and millerrabin2 arg size1: 4 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging prime_p and powm2
+STATISTICS: merging prime_p and powm2 arg size1: 1 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging _usage_false and _usage_fmt
+STATISTICS: merging _usage_false and _usage_fmt arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging emit_ancillary_info.2924 and single_binary_main_fmt
+STATISTICS: merging emit_ancillary_info.2924 and single_binary_main_fmt arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging fmt and flush_paragraph
+STATISTICS: merging fmt and flush_paragraph arg size1: 1 arg size2: 0
+STATISTICS: fusion function arg size: 2
+merging get_prefix and fmt_paragraph
+STATISTICS: merging get_prefix and fmt_paragraph arg size1: 1 arg size2: 0
+STATISTICS: fusion function arg size: 2
+merging get_line and put_line
+STATISTICS: merging get_line and put_line arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_fold and fold_file
+STATISTICS: merging _usage_fold and fold_file arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_fold and _usage_ginstall
+STATISTICS: merging single_binary_main_fold and _usage_ginstall arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_ginstall and process_dir
+STATISTICS: merging single_binary_main_ginstall and process_dir arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging install_file_in_file and make_ancestor
+STATISTICS: merging install_file_in_file and make_ancestor arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging announce_mkdir and _usage_groups
+STATISTICS: merging announce_mkdir and _usage_groups arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_groups and _usage_head
+STATISTICS: merging single_binary_main_groups and _usage_head arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_group_list and single_binary_main_head
+STATISTICS: merging print_group_list and single_binary_main_head arg size1: 6 arg size2: 2
+STATISTICS: fusion function arg size: 7
+merging elseek and xwrite_stdout
+STATISTICS: merging elseek and xwrite_stdout arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging diagnose_copy_fd_failure and _usage_id
+STATISTICS: merging diagnose_copy_fd_failure and _usage_id arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_id and _usage_join
+STATISTICS: merging single_binary_main_id and _usage_join arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_stuff and single_binary_main_join
+STATISTICS: merging print_stuff and single_binary_main_join arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging add_field_list and get_line.3363
+STATISTICS: merging add_field_list and get_line.3363 arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging prjoin and putchar_unlocked
+STATISTICS: merging prjoin and putchar_unlocked arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging prfield and _usage_kill
+STATISTICS: merging prfield and _usage_kill arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging prfields and single_binary_main_kill
+STATISTICS: merging prfields and single_binary_main_kill arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging _usage_link and _usage_ln
+STATISTICS: merging _usage_link and _usage_ln arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_ln and relpath
+STATISTICS: merging single_binary_main_ln and relpath arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging _usage_logname and single_binary_main_ls
+STATISTICS: merging _usage_logname and single_binary_main_ls arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_logname and _usage_ls
+STATISTICS: merging single_binary_main_logname and _usage_ls arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging get_funky_string and dev_ino_hash
+STATISTICS: merging get_funky_string and dev_ino_hash arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging dev_ino_compare and dev_ino_free
+STATISTICS: merging dev_ino_compare and dev_ino_free arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging gobble_file and sort_files
+STATISTICS: merging gobble_file and sort_files arg size1: 4 arg size2: 0
+STATISTICS: fusion function arg size: 5
+merging extract_dirs_from_files and print_current_files
+STATISTICS: merging extract_dirs_from_files and print_current_files arg size1: 2 arg size2: 0
+STATISTICS: fusion function arg size: 3
+merging quote_name and process_signals.3663
+STATISTICS: merging quote_name and process_signals.3663 arg size1: 7 arg size2: 0
+STATISTICS: fusion function arg size: 8
+merging put_indicator and dired_dump_obstack
+STATISTICS: merging put_indicator and dired_dump_obstack arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging signal_setup and quote_name_buf
+STATISTICS: merging signal_setup and quote_name_buf arg size1: 1 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging print_with_separator and calculate_columns
+STATISTICS: merging print_with_separator and calculate_columns arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging format_user and print_name_with_quoting
+STATISTICS: merging format_user and print_name_with_quoting arg size1: 3 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging xstrcoll_name and xstrcoll_df_name
+STATISTICS: merging xstrcoll_name and xstrcoll_df_name arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_name and rev_xstrcoll_df_name
+STATISTICS: merging rev_xstrcoll_name and rev_xstrcoll_df_name arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_name and strcmp_df_name
+STATISTICS: merging strcmp_name and strcmp_df_name arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_strcmp_name and rev_strcmp_df_name
+STATISTICS: merging rev_strcmp_name and rev_strcmp_df_name arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_extension and xstrcoll_df_extension
+STATISTICS: merging xstrcoll_extension and xstrcoll_df_extension arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_extension and rev_xstrcoll_df_extension
+STATISTICS: merging rev_xstrcoll_extension and rev_xstrcoll_df_extension arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_extension and strcmp_df_extension
+STATISTICS: merging strcmp_extension and strcmp_df_extension arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_strcmp_extension and rev_strcmp_df_extension
+STATISTICS: merging rev_strcmp_extension and rev_strcmp_df_extension arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_width and xstrcoll_df_width
+STATISTICS: merging xstrcoll_width and xstrcoll_df_width arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_width and rev_xstrcoll_df_width
+STATISTICS: merging rev_xstrcoll_width and rev_xstrcoll_df_width arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_df_width and rev_strcmp_df_width
+STATISTICS: merging strcmp_df_width and rev_strcmp_df_width arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_size and xstrcoll_df_size
+STATISTICS: merging xstrcoll_size and xstrcoll_df_size arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_size and rev_xstrcoll_df_size
+STATISTICS: merging rev_xstrcoll_size and rev_xstrcoll_df_size arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_size and strcmp_df_size
+STATISTICS: merging strcmp_size and strcmp_df_size arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_strcmp_size and rev_strcmp_df_size
+STATISTICS: merging rev_strcmp_size and rev_strcmp_df_size arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_version and xstrcoll_df_version
+STATISTICS: merging xstrcoll_version and xstrcoll_df_version arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_version and rev_xstrcoll_df_version
+STATISTICS: merging rev_xstrcoll_version and rev_xstrcoll_df_version arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_mtime and xstrcoll_df_mtime
+STATISTICS: merging xstrcoll_mtime and xstrcoll_df_mtime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_mtime and rev_xstrcoll_df_mtime
+STATISTICS: merging rev_xstrcoll_mtime and rev_xstrcoll_df_mtime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_mtime and strcmp_df_mtime
+STATISTICS: merging strcmp_mtime and strcmp_df_mtime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_strcmp_mtime and rev_strcmp_df_mtime
+STATISTICS: merging rev_strcmp_mtime and rev_strcmp_df_mtime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_ctime and xstrcoll_df_ctime
+STATISTICS: merging xstrcoll_ctime and xstrcoll_df_ctime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_ctime and rev_xstrcoll_df_ctime
+STATISTICS: merging rev_xstrcoll_ctime and rev_xstrcoll_df_ctime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_ctime and strcmp_df_ctime
+STATISTICS: merging strcmp_ctime and strcmp_df_ctime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_strcmp_ctime and rev_strcmp_df_ctime
+STATISTICS: merging rev_strcmp_ctime and rev_strcmp_df_ctime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_atime and xstrcoll_df_atime
+STATISTICS: merging xstrcoll_atime and xstrcoll_df_atime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_atime and rev_xstrcoll_df_atime
+STATISTICS: merging rev_xstrcoll_atime and rev_xstrcoll_df_atime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_atime and strcmp_df_atime
+STATISTICS: merging strcmp_atime and strcmp_df_atime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_strcmp_atime and rev_strcmp_df_atime
+STATISTICS: merging rev_strcmp_atime and rev_strcmp_df_atime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll_btime and xstrcoll_df_btime
+STATISTICS: merging xstrcoll_btime and xstrcoll_df_btime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_xstrcoll_btime and rev_xstrcoll_df_btime
+STATISTICS: merging rev_xstrcoll_btime and rev_xstrcoll_df_btime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strcmp_btime and strcmp_df_btime
+STATISTICS: merging strcmp_btime and strcmp_df_btime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rev_strcmp_btime and rev_strcmp_df_btime
+STATISTICS: merging rev_strcmp_btime and rev_strcmp_df_btime arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xstrcoll and _usage_md5sum
+STATISTICS: merging xstrcoll and _usage_md5sum arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_md5sum and _usage_mkdir
+STATISTICS: merging single_binary_main_md5sum and _usage_mkdir arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_filename.3914 and single_binary_main_mkdir
+STATISTICS: merging print_filename.3914 and single_binary_main_mkdir arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging make_ancestor.3977 and process_dir.3985
+STATISTICS: merging make_ancestor.3977 and process_dir.3985 arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging announce_mkdir.3986 and _usage_mkfifo
+STATISTICS: merging announce_mkdir.3986 and _usage_mkfifo arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_mkfifo and _usage_mknod
+STATISTICS: merging single_binary_main_mkfifo and _usage_mknod arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_mknod and _usage_mktemp
+STATISTICS: merging single_binary_main_mknod and _usage_mktemp arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_mktemp and _usage_mv
+STATISTICS: merging single_binary_main_mktemp and _usage_mv arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_mv and rm
+STATISTICS: merging single_binary_main_mv and rm arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging do_move and is_empty_dir
+STATISTICS: merging do_move and is_empty_dir arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging excise and _usage_nl
+STATISTICS: merging excise and _usage_nl arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+merging single_binary_main_nl and _usage_nproc
+STATISTICS: merging single_binary_main_nl and _usage_nproc arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging nl_file and single_binary_main_nproc
+STATISTICS: merging nl_file and single_binary_main_nproc arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_nohup and _usage_numfmt
+STATISTICS: merging _usage_nohup and _usage_numfmt arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_nohup and single_binary_main_numfmt
+STATISTICS: merging single_binary_main_nohup and single_binary_main_numfmt arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging process_line and _usage_od
+STATISTICS: merging process_line and _usage_od arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging process_field and single_binary_main_od
+STATISTICS: merging process_field and single_binary_main_od arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging format_address_std and decode_format_string
+STATISTICS: merging format_address_std and decode_format_string arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging format_address_paren and format_address_label
+STATISTICS: merging format_address_paren and format_address_label arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging open_next_file and write_block
+STATISTICS: merging open_next_file and write_block arg size1: 0 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging read_block and print_s_char
+STATISTICS: merging read_block and print_s_char arg size1: 3 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging print_char and print_s_short
+STATISTICS: merging print_char and print_s_short arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging print_short and print_ascii
+STATISTICS: merging print_short and print_ascii arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging print_named_ascii and print_long_long
+STATISTICS: merging print_named_ascii and print_long_long arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging print_long and print_int
+STATISTICS: merging print_long and print_int arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging print_long_double and print_double
+STATISTICS: merging print_long_double and print_double arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging print_float and _usage_paste
+STATISTICS: merging print_float and _usage_paste arg size1: 6 arg size2: 1
+STATISTICS: fusion function arg size: 7
+merging single_binary_main_paste and paste_serial
+STATISTICS: merging single_binary_main_paste and paste_serial arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging paste_parallel and _usage_pathchk
+STATISTICS: merging paste_parallel and _usage_pathchk arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging write_error and single_binary_main_pathchk
+STATISTICS: merging write_error and single_binary_main_pathchk arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_pr and init_header
+STATISTICS: merging single_binary_main_pr and init_header arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging integer_overflow and _usage_pr
+STATISTICS: merging integer_overflow and _usage_pr arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging print_files and store_char
+STATISTICS: merging print_files and store_char arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging skip_read and read_line
+STATISTICS: merging skip_read and read_line arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_stored and read_rest_of_line
+STATISTICS: merging print_stored and read_rest_of_line arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging print_sep_string and add_line_number
+STATISTICS: merging print_sep_string and add_line_number arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging print_white_space and close_file
+STATISTICS: merging print_white_space and close_file arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging print_header and _usage_printenv
+STATISTICS: merging print_header and _usage_printenv arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_printenv and _usage_printf
+STATISTICS: merging single_binary_main_printenv and _usage_printf arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_printf and _usage_ptx
+STATISTICS: merging single_binary_main_printf and _usage_ptx arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_esc and vstrtoimax
+STATISTICS: merging print_esc and vstrtoimax arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging verify_numeric and single_binary_main_ptx
+STATISTICS: merging verify_numeric and single_binary_main_ptx arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging copy_unescaped_string and compile_regex
+STATISTICS: merging copy_unescaped_string and compile_regex arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging swallow_file_in_memory and matcher_error
+STATISTICS: merging swallow_file_in_memory and matcher_error arg size1: 2 arg size2: 0
+STATISTICS: fusion function arg size: 3
+merging digest_word_file and print_field
+STATISTICS: merging digest_word_file and print_field arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_pwd and nth_parent
+STATISTICS: merging _usage_pwd and nth_parent arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_pwd and _usage_readlink
+STATISTICS: merging single_binary_main_pwd and _usage_readlink arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_readlink and _usage_realpath
+STATISTICS: merging single_binary_main_readlink and _usage_realpath arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_realpath and _usage_rm
+STATISTICS: merging single_binary_main_realpath and _usage_rm arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_rm and _usage_rmdir
+STATISTICS: merging single_binary_main_rm and _usage_rmdir arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging diagnose_leading_hyphen and single_binary_main_rmdir
+STATISTICS: merging diagnose_leading_hyphen and single_binary_main_rmdir arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging ignorable_failure and _usage_runcon
+STATISTICS: merging ignorable_failure and _usage_runcon arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_runcon and _usage_seq
+STATISTICS: merging single_binary_main_runcon and _usage_seq arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_seq and _usage_sha1sum
+STATISTICS: merging single_binary_main_seq and _usage_sha1sum arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging seq_fast and scan_arg
+STATISTICS: merging seq_fast and scan_arg arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging io_error and single_binary_main_sha1sum
+STATISTICS: merging io_error and single_binary_main_sha1sum arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging print_filename.5518 and _usage_sha224sum
+STATISTICS: merging print_filename.5518 and _usage_sha224sum arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_sha224sum and _usage_sha256sum
+STATISTICS: merging single_binary_main_sha224sum and _usage_sha256sum arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_filename.5617 and single_binary_main_sha256sum
+STATISTICS: merging print_filename.5617 and single_binary_main_sha256sum arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging print_filename.5716 and _usage_sha384sum
+STATISTICS: merging print_filename.5716 and _usage_sha384sum arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_sha384sum and _usage_sha512sum
+STATISTICS: merging single_binary_main_sha384sum and _usage_sha512sum arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging print_filename.5815 and single_binary_main_sha512sum
+STATISTICS: merging print_filename.5815 and single_binary_main_sha512sum arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging print_filename.5914 and _usage_shred
+STATISTICS: merging print_filename.5914 and _usage_shred arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_shred and _usage_shuf
+STATISTICS: merging single_binary_main_shred and _usage_shuf arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging do_wipefd and single_binary_main_shuf
+STATISTICS: merging do_wipefd and single_binary_main_shuf arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging _usage_sleep and _usage_sort
+STATISTICS: merging _usage_sleep and _usage_sort arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_sleep and single_binary_main_sort
+STATISTICS: merging single_binary_main_sleep and single_binary_main_sort arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging badfieldspec and incompatible_options
+STATISTICS: merging badfieldspec and incompatible_options arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging stream_open and sort_die
+STATISTICS: merging stream_open and sort_die arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xfclose and key_to_opts
+STATISTICS: merging xfclose and key_to_opts arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging fillbuf and compare
+STATISTICS: merging fillbuf and compare arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging write_line and merge
+STATISTICS: merging write_line and merge arg size1: 3 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging maybe_create_temp and compare_nodes
+STATISTICS: merging maybe_create_temp and compare_nodes arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging init_node and sortlines
+STATISTICS: merging init_node and sortlines arg size1: 6 arg size2: 7
+STATISTICS: fusion function arg size: 8
+merging sighandler.6242 and sequential_sort
+STATISTICS: merging sighandler.6242 and sequential_sort arg size1: 1 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging pipe_fork and proctab_hasher
+STATISTICS: merging pipe_fork and proctab_hasher arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging proctab_comparator and async_safe_die
+STATISTICS: merging proctab_comparator and async_safe_die arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging open_input_files and mergefps
+STATISTICS: merging open_input_files and mergefps arg size1: 3 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging zaptemp and begfield
+STATISTICS: merging zaptemp and begfield arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging limfield and xstrxfrm
+STATISTICS: merging limfield and xstrxfrm arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging _usage_split and bytes_split
+STATISTICS: merging _usage_split and bytes_split arg size1: 1 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging single_binary_main_split and create
+STATISTICS: merging single_binary_main_split and create arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging next_file_name and ofile_open
+STATISTICS: merging next_file_name and ofile_open arg size1: 0 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging closeout and _usage_stat
+STATISTICS: merging closeout and _usage_stat arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+merging single_binary_main_stat and print_statfs
+STATISTICS: merging single_binary_main_stat and print_statfs arg size1: 2 arg size2: 7
+STATISTICS: fusion function arg size: 8
+merging default_format and print_it
+STATISTICS: merging default_format and print_it arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging print_stat and _usage_sum
+STATISTICS: merging print_stat and _usage_sum arg size1: 7 arg size2: 1
+STATISTICS: fusion function arg size: 8
+merging find_bind_mount and out_epoch_sec
+STATISTICS: merging find_bind_mount and out_epoch_sec arg size1: 1 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging single_binary_main_sum and bsd_sum_file
+STATISTICS: merging single_binary_main_sum and bsd_sum_file arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging sysv_sum_file and _usage_sync
+STATISTICS: merging sysv_sum_file and _usage_sync arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_sync and _usage_tac
+STATISTICS: merging single_binary_main_sync and _usage_tac arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_tac and output
+STATISTICS: merging single_binary_main_tac and output arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging tac_seekable and _usage_tail
+STATISTICS: merging tac_seekable and _usage_tail arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging single_binary_main_tail and wd_hasher
+STATISTICS: merging single_binary_main_tail and wd_hasher arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xwrite_stdout.6886 and xlseek
+STATISTICS: merging xwrite_stdout.6886 and xlseek arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging dump_remainder and wd_comparator
+STATISTICS: merging dump_remainder and wd_comparator arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging die_pipe and _usage_tee
+STATISTICS: merging die_pipe and _usage_tee arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_tee and single_binary_main_test
+STATISTICS: merging single_binary_main_tee and single_binary_main_test arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging posixtest.6998 and binop.7013
+STATISTICS: merging posixtest.6998 and binop.7013 arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging beyond.7003 and find_int.7015
+STATISTICS: merging beyond.7003 and find_int.7015 arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging three_arguments.7004 and _usage_touch
+STATISTICS: merging three_arguments.7004 and _usage_touch arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging term.7007 and single_binary_main_touch
+STATISTICS: merging term.7007 and single_binary_main_touch arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_tr and parse_str
+STATISTICS: merging _usage_tr and parse_str arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging single_binary_main_tr and plain_read
+STATISTICS: merging single_binary_main_tr and plain_read arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging get_spec_stats and get_next
+STATISTICS: merging get_spec_stats and get_next arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging squeeze_filter and read_and_delete
+STATISTICS: merging squeeze_filter and read_and_delete arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging read_and_xlate and make_printable_str
+STATISTICS: merging read_and_xlate and make_printable_str arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_true and _usage_truncate
+STATISTICS: merging _usage_true and _usage_truncate arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging emit_ancillary_info.7211 and single_binary_main_truncate
+STATISTICS: merging emit_ancillary_info.7211 and single_binary_main_truncate arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_tsort and count_items
+STATISTICS: merging _usage_tsort and count_items arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_tsort and scan_zeros
+STATISTICS: merging single_binary_main_tsort and scan_zeros arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging recurse_tree and detect_loop
+STATISTICS: merging recurse_tree and detect_loop arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging _usage_tty and _usage_uname
+STATISTICS: merging _usage_tty and _usage_uname arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_tty and single_binary_main_uname
+STATISTICS: merging single_binary_main_tty and single_binary_main_uname arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_unexpand and _usage_uniq
+STATISTICS: merging _usage_unexpand and _usage_uniq arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_unexpand and single_binary_main_uniq
+STATISTICS: merging single_binary_main_unexpand and single_binary_main_uniq arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging find_field and writeline.7536
+STATISTICS: merging find_field and writeline.7536 arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging _usage_unlink and single_binary_main_vdir
+STATISTICS: merging _usage_unlink and single_binary_main_vdir arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _usage_wc and wc
+STATISTICS: merging _usage_wc and wc arg size1: 1 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging single_binary_main_wc and wc_lines
+STATISTICS: merging single_binary_main_wc and wc_lines arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging _usage_whoami and _usage_yes
+STATISTICS: merging _usage_whoami and _usage_yes arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging single_binary_main_whoami and single_binary_main_yes
+STATISTICS: merging single_binary_main_whoami and single_binary_main_yes arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging copy_acl and set_acl
+STATISTICS: merging copy_acl and set_acl arg size1: 5 arg size2: 3
+STATISTICS: fusion function arg size: 6
+merging areadlink_with_size and argmatch
+STATISTICS: merging areadlink_with_size and argmatch arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging argmatch_invalid and argmatch_valid
+STATISTICS: merging argmatch_invalid and argmatch_valid arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging __xargmatch_internal and __argmatch_die
+STATISTICS: merging __xargmatch_internal and __argmatch_die arg size1: 6 arg size2: 0
+STATISTICS: fusion function arg size: 7
+merging argv_iter_init_argv and argv_iter_init_stream
+STATISTICS: merging argv_iter_init_argv and argv_iter_init_stream arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging argv_iter and argv_iter_n_args
+STATISTICS: merging argv_iter and argv_iter_n_args arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging argv_iter_free and set_simple_backup_suffix
+STATISTICS: merging argv_iter_free and set_simple_backup_suffix arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging backupfile_internal and xget_version
+STATISTICS: merging backupfile_internal and xget_version arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging backup_file_rename and find_backup_file_name
+STATISTICS: merging backup_file_rename and find_backup_file_name arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging base32_encode and isbase32
+STATISTICS: merging base32_encode and isbase32 arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+merging base32_decode_ctx_init and base32_decode_ctx
+STATISTICS: merging base32_decode_ctx_init and base32_decode_ctx arg size1: 1 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging base64_encode and isbase64
+STATISTICS: merging base64_encode and isbase64 arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+merging base64_decode_ctx_init and base64_decode_ctx
+STATISTICS: merging base64_decode_ctx_init and base64_decode_ctx arg size1: 1 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging last_component and base_len
+STATISTICS: merging last_component and base_len arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging buffer_lcm and c_strcasecmp
+STATISTICS: merging buffer_lcm and c_strcasecmp arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging c_strncasecmp and canon_host
+STATISTICS: merging c_strncasecmp and canon_host arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging canonicalize_filename_mode and close_stream
+STATISTICS: merging canonicalize_filename_mode and close_stream arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging md5_init_ctx and md5_finish_ctx
+STATISTICS: merging md5_init_ctx and md5_finish_ctx arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging md5_process_block and sha1_process_block
+STATISTICS: merging md5_process_block and sha1_process_block arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging md5_stream and sha1_stream
+STATISTICS: merging md5_stream and sha1_stream arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging md5_process_bytes and sha1_process_bytes
+STATISTICS: merging md5_process_bytes and sha1_process_bytes arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging sha256_finish_ctx and sha224_finish_ctx
+STATISTICS: merging sha256_finish_ctx and sha224_finish_ctx arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging sha256_process_block and sha512_finish_ctx
+STATISTICS: merging sha256_process_block and sha512_finish_ctx arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging sha256_stream and sha224_stream
+STATISTICS: merging sha256_stream and sha224_stream arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging sha256_process_bytes and sha512_process_block
+STATISTICS: merging sha256_process_bytes and sha512_process_block arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging sha512_stream and sha384_stream
+STATISTICS: merging sha512_stream and sha384_stream arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging sha512_process_bytes and di_set_alloc
+STATISTICS: merging sha512_process_bytes and di_set_alloc arg size1: 3 arg size2: 0
+STATISTICS: fusion function arg size: 4
+merging di_ent_hash and di_ent_compare
+STATISTICS: merging di_ent_hash and di_ent_compare arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging di_ent_free and di_set_free
+STATISTICS: merging di_ent_free and di_set_free arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging di_ino_hash and dir_name
+STATISTICS: merging di_ino_hash and dir_name arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging base_name and dir_len
+STATISTICS: merging base_name and dir_len arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging mdir_name and strip_trailing_slashes
+STATISTICS: merging mdir_name and strip_trailing_slashes arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging dtoastr and fnmatch_pattern_has_wildcards
+STATISTICS: merging dtoastr and fnmatch_pattern_has_wildcards arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+merging new_exclude and excluded_file_name
+STATISTICS: merging new_exclude and excluded_file_name arg size1: 0 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging fnmatch_no_wildcards and add_exclude
+STATISTICS: merging fnmatch_no_wildcards and add_exclude arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging string_hasher_ci and string_hasher
+STATISTICS: merging string_hasher_ci and string_hasher arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging string_compare_ci and string_compare
+STATISTICS: merging string_compare_ci and string_compare arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging string_free and add_exclude_fp
+STATISTICS: merging string_free and add_exclude_fp arg size1: 1 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging add_exclude_file and call_addfn
+STATISTICS: merging add_exclude_file and call_addfn arg size1: 5 arg size2: 4
+STATISTICS: fusion function arg size: 6
+merging fdadvise and fadvise
+STATISTICS: merging fdadvise and fadvise arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging fd_reopen and record_file
+STATISTICS: merging fd_reopen and record_file arg size1: 4 arg size2: 3
+STATISTICS: fusion function arg size: 5
+merging seen_file and file_type
+STATISTICS: merging seen_file and file_type arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging filemodestring and file_name_concat
+STATISTICS: merging filemodestring and file_name_concat arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mfile_name_concat and filevercmp
+STATISTICS: merging mfile_name_concat and filevercmp arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging fopen_safer and fprintftime
+STATISTICS: merging fopen_safer and fprintftime arg size1: 2 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging __strftime_internal and freopen_safer
+STATISTICS: merging __strftime_internal and freopen_safer arg size1: 8 arg size2: 3
+STATISTICS: fusion function arg size: 9
+merging ftoastr and full_read
+STATISTICS: merging ftoastr and full_read arg size1: 5 arg size2: 3
+STATISTICS: fusion function arg size: 6
+merging full_write and gethrxtime
+STATISTICS: merging full_write and gethrxtime arg size1: 3 arg size2: 0
+STATISTICS: fusion function arg size: 4
+merging getndelim2 and gettime
+STATISTICS: merging getndelim2 and gettime arg size1: 7 arg size2: 1
+STATISTICS: fusion function arg size: 8
+merging freadseek and hard_locale
+STATISTICS: merging freadseek and hard_locale arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging hash_get_n_entries and hash_lookup
+STATISTICS: merging hash_get_n_entries and hash_lookup arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging hash_string and hash_initialize
+STATISTICS: merging hash_string and hash_initialize arg size1: 2 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging raw_hasher and raw_comparator
+STATISTICS: merging raw_hasher and raw_comparator arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging hash_free and hash_rehash
+STATISTICS: merging hash_free and hash_rehash arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging transfer_entries and hash_insert_if_absent
+STATISTICS: merging transfer_entries and hash_insert_if_absent arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging hash_insert and hash_remove
+STATISTICS: merging hash_insert and hash_remove arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging triple_hash_no_name and triple_compare
+STATISTICS: merging triple_hash_no_name and triple_compare arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging triple_hash and triple_compare_ino_str
+STATISTICS: merging triple_hash and triple_compare_ino_str arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging triple_free and hash_pjw
+STATISTICS: merging triple_free and hash_pjw arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging heap_alloc and heap_insert
+STATISTICS: merging heap_alloc and heap_insert arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging heap_remove_top and human_readable
+STATISTICS: merging heap_remove_top and human_readable arg size1: 1 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging human_options and getuser
+STATISTICS: merging human_options and getuser arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging getgroup and ino_map_alloc
+STATISTICS: merging getgroup and ino_map_alloc arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging ino_hash and ino_compare
+STATISTICS: merging ino_hash and ino_compare arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging ino_map_free and ino_map_insert
+STATISTICS: merging ino_map_free and ino_map_insert arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging imaxtostr and inttostr
+STATISTICS: merging imaxtostr and inttostr arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging offtostr and uinttostr
+STATISTICS: merging offtostr and uinttostr arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging umaxtostr and ldtoastr
+STATISTICS: merging umaxtostr and ldtoastr arg size1: 2 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging initbuffer and readlinebuffer
+STATISTICS: merging initbuffer and readlinebuffer arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging readlinebuffer_delim and freebuffer
+STATISTICS: merging readlinebuffer_delim and freebuffer arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging mbsalign and mbscasecmp
+STATISTICS: merging mbsalign and mbscasecmp arg size1: 6 arg size2: 2
+STATISTICS: fusion function arg size: 7
+merging ambsalign and mbschr
+STATISTICS: merging ambsalign and mbschr arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging mbslen and gnu_mbswidth
+STATISTICS: merging mbslen and gnu_mbswidth arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging mbsnwidth and mbuiter_multi_next
+STATISTICS: merging mbsnwidth and mbuiter_multi_next arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging memcasecmp and memchr2
+STATISTICS: merging memcasecmp and memchr2 arg size1: 3 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging mkancesdirs and mode_compile
+STATISTICS: merging mkancesdirs and mode_compile arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+merging mode_create_from_ref and mode_adjust
+STATISTICS: merging mode_create_from_ref and mode_adjust arg size1: 1 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging mpsort and num_processors
+STATISTICS: merging mpsort and num_processors arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging mpsort_with_tmp and nstrftime
+STATISTICS: merging mpsort_with_tmp and nstrftime arg size1: 4 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging __strftime_internal.8106 and opendirat
+STATISTICS: merging __strftime_internal.8106 and opendirat arg size1: 9 arg size2: 4
+STATISTICS: fusion function arg size: 10
+merging yyparse and str_days
+STATISTICS: merging yyparse and str_days arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging lookup_zone and debug_print_relative_time
+STATISTICS: merging lookup_zone and debug_print_relative_time arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging parse_datetime2 and parse_datetime
+STATISTICS: merging parse_datetime2 and parse_datetime arg size1: 6 arg size2: 3
+STATISTICS: fusion function arg size: 7
+merging parse_datetime_body and posixtime
+STATISTICS: merging parse_datetime_body and posixtime arg size1: 6 arg size2: 3
+STATISTICS: fusion function arg size: 7
+merging posix2_version and set_program_name
+STATISTICS: merging posix2_version and set_program_name arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging proper_name_utf8 and mbsstr
+STATISTICS: merging proper_name_utf8 and mbsstr arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging mbsstr_trimmed_wordbounded and locale_charset
+STATISTICS: merging mbsstr_trimmed_wordbounded and locale_charset arg size1: 2 arg size2: 0
+STATISTICS: fusion function arg size: 3
+merging knuth_morris_pratt_multibyte and knuth_morris_pratt
+STATISTICS: merging knuth_morris_pratt_multibyte and knuth_morris_pratt arg size1: 3 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging mmalloca and freea
+STATISTICS: merging mmalloca and freea arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging qcopy_acl and qset_acl
+STATISTICS: merging qcopy_acl and qset_acl arg size1: 5 arg size2: 3
+STATISTICS: fusion function arg size: 6
+merging get_permissions and set_permissions
+STATISTICS: merging get_permissions and set_permissions arg size1: 4 arg size2: 3
+STATISTICS: fusion function arg size: 5
+merging clone_quoting_options and get_quoting_style
+STATISTICS: merging clone_quoting_options and get_quoting_style arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging set_quoting_style and set_char_quoting
+STATISTICS: merging set_quoting_style and set_char_quoting arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging quotearg_buffer and gettext_quote
+STATISTICS: merging quotearg_buffer and gettext_quote arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+merging quotearg_buffer_restyled and quotearg_colon
+STATISTICS: merging quotearg_buffer_restyled and quotearg_colon arg size1: 9 arg size2: 1
+STATISTICS: fusion function arg size: 10
+merging quote_n and quote
+STATISTICS: merging quote_n and quote arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging randint_all_new and randint_get_source
+STATISTICS: merging randint_all_new and randint_get_source arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging randint_genmax and randint_all_free
+STATISTICS: merging randint_genmax and randint_all_free arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging randperm_new and sparse_hash_
+STATISTICS: merging randperm_new and sparse_hash_ arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging sparse_cmp_ and randread_new
+STATISTICS: merging sparse_cmp_ and randread_new arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging randread_error and randread_free
+STATISTICS: merging randread_error and randread_free arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging randread and isaac_seed
+STATISTICS: merging randread and isaac_seed arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging isaac_refill and fread_file
+STATISTICS: merging isaac_refill and fread_file arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging init_tokenbuffer and readtoken
+STATISTICS: merging init_tokenbuffer and readtoken arg size1: 1 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging readtokens0_init and readtokens0_free
+STATISTICS: merging readtokens0_init and readtokens0_free arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging readtokens0 and get_root_dev_ino
+STATISTICS: merging readtokens0 and get_root_dev_ino arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging save_token and safe_read
+STATISTICS: merging save_token and safe_read arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging safe_write and same_name
+STATISTICS: merging safe_write and same_name arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging save_cwd and restore_cwd
+STATISTICS: merging save_cwd and restore_cwd arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging free_cwd and streamsavedir
+STATISTICS: merging free_cwd and streamsavedir arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging direntry_cmp_name and direntry_cmp_inode
+STATISTICS: merging direntry_cmp_name and direntry_cmp_inode arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging savedir and savewd_restore
+STATISTICS: merging savedir and savewd_restore arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging opendir_safer and savewd_finish
+STATISTICS: merging opendir_safer and savewd_finish arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging savewd_process_files and gl_scratch_buffer_dupfree
+STATISTICS: merging savewd_process_files and gl_scratch_buffer_dupfree arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging gl_scratch_buffer_grow and openat_save_fail
+STATISTICS: merging gl_scratch_buffer_grow and openat_save_fail arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging openat_restore_fail and settime
+STATISTICS: merging openat_restore_fail and settime arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging mkstemp_safer and mkostemp_safer
+STATISTICS: merging mkstemp_safer and mkostemp_safer arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging dup_safer_flag and strnlen1
+STATISTICS: merging dup_safer_flag and strnlen1 arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging strintcmp and strnumcmp
+STATISTICS: merging strintcmp and strnumcmp arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging gen_tempname_len and try_nocreate
+STATISTICS: merging gen_tempname_len and try_nocreate arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+merging try_tempname_len and try_file
+STATISTICS: merging try_tempname_len and try_file arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+merging try_dir and trim2
+STATISTICS: merging try_dir and trim2 arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging mbiter_multi_next and fwrite_success_callback
+STATISTICS: merging mbiter_multi_next and fwrite_success_callback arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging print_unicode_char and fallback_failure_callback
+STATISTICS: merging print_unicode_char and fallback_failure_callback arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging exit_failure_callback and dup_safer
+STATISTICS: merging exit_failure_callback and dup_safer arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging parse_user_spec and utimecmp
+STATISTICS: merging parse_user_spec and utimecmp arg size1: 5 arg size2: 4
+STATISTICS: fusion function arg size: 6
+merging utimecmpat and dev_info_hash
+STATISTICS: merging utimecmpat and dev_info_hash arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+merging dev_info_compare and utimens
+STATISTICS: merging dev_info_compare and utimens arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging lutimens and verror
+STATISTICS: merging lutimens and verror arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging verror_at_line and version_etc_arn
+STATISTICS: merging verror_at_line and version_etc_arn arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging version_etc_va and xmalloc
+STATISTICS: merging version_etc_va and xmalloc arg size1: 5 arg size2: 1
+STATISTICS: fusion function arg size: 6
+merging ximalloc and xrealloc
+STATISTICS: merging ximalloc and xrealloc arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xirealloc and x2realloc
+STATISTICS: merging xirealloc and x2realloc arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xzalloc and xcalloc
+STATISTICS: merging xzalloc and xcalloc arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging xmemdup and ximemdup
+STATISTICS: merging xmemdup and ximemdup arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging ximemdup0 and xstrdup
+STATISTICS: merging ximemdup0 and xstrdup arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging xdectoimax and xdectoumax
+STATISTICS: merging xdectoimax and xdectoumax arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging xfts_open and cycle_warning_required
+STATISTICS: merging xfts_open and cycle_warning_required arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging xgetcwd and xgetgroups
+STATISTICS: merging xgetcwd and xgetgroups arg size1: 0 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mgetgroups and xgethostname
+STATISTICS: merging mgetgroups and xgethostname arg size1: 3 arg size2: 0
+STATISTICS: fusion function arg size: 4
+merging xmemcoll and xmemcoll0
+STATISTICS: merging xmemcoll and xmemcoll0 arg size1: 4 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging memcoll and memcoll0
+STATISTICS: merging memcoll and memcoll0 arg size1: 4 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging xnanosleep and xstr_iconv
+STATISTICS: merging xnanosleep and xstr_iconv arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 5
+merging str_cd_iconv and xstrtoul
+STATISTICS: merging str_cd_iconv and xstrtoul arg size1: 2 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging str_iconv and xstrtol_fatal
+STATISTICS: merging str_iconv and xstrtol_fatal arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging xstrtoumax and xvasprintf
+STATISTICS: merging xstrtoumax and xvasprintf arg size1: 5 arg size2: 2
+STATISTICS: fusion function arg size: 6
+merging yesno and chdir_long
+STATISTICS: merging yesno and chdir_long arg size1: 0 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging rpl_fclose and freadahead
+STATISTICS: merging rpl_fclose and freadahead arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging rpl_fflush and freadptr
+STATISTICS: merging rpl_fflush and freadptr arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging rpl_free and rpl_fseeko
+STATISTICS: merging rpl_free and rpl_fseeko arg size1: 1 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging rpl_fts_open and AD_hash
+STATISTICS: merging rpl_fts_open and AD_hash arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging fts_stat and fts_sort
+STATISTICS: merging fts_stat and fts_sort arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging AD_compare and rpl_fts_close
+STATISTICS: merging AD_compare and rpl_fts_close arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging rpl_fts_read and fts_compare_ino
+STATISTICS: merging rpl_fts_read and fts_compare_ino arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging leave_dir and restore_initial_cwd
+STATISTICS: merging leave_dir and restore_initial_cwd arg size1: 2 arg size2: 1
+STATISTICS: fusion function arg size: 3
+merging fts_build and dev_type_hash
+STATISTICS: merging fts_build and dev_type_hash arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging dev_type_compare and i_ring_init
+STATISTICS: merging dev_type_compare and i_ring_init arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging i_ring_empty and i_ring_push
+STATISTICS: merging i_ring_empty and i_ring_push arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging i_ring_pop and cycle_check_init
+STATISTICS: merging i_ring_pop and cycle_check_init arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging rpl_mbrlen and mpn_mul
+STATISTICS: merging rpl_mbrlen and mpn_mul arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging rpl_mbrtowc and mpz_init
+STATISTICS: merging rpl_mbrtowc and mpz_init arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+merging mpz_clear and gmp_default_free
+STATISTICS: merging mpz_clear and gmp_default_free arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging gmp_die and mpz_set_ui
+STATISTICS: merging gmp_die and mpz_set_ui arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging gmp_default_realloc and mpz_set
+STATISTICS: merging gmp_default_realloc and mpz_set arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging mpz_init_set_si and mpz_init_set_ui
+STATISTICS: merging mpz_init_set_si and mpz_init_set_ui arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging mpz_fits_ulong_p and mpz_get_ui
+STATISTICS: merging mpz_fits_ulong_p and mpz_get_ui arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging mpz_sgn and mpz_cmp_ui
+STATISTICS: merging mpz_sgn and mpz_cmp_ui arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging mpz_cmp and mpz_add
+STATISTICS: merging mpz_cmp and mpz_add arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpz_abs_sub and mpz_sub_ui
+STATISTICS: merging mpz_abs_sub and mpz_sub_ui arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpz_ui_sub and mpz_sub
+STATISTICS: merging mpz_ui_sub and mpz_sub arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpz_mul and mpz_mul_2exp
+STATISTICS: merging mpz_mul and mpz_mul_2exp arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpz_tdiv_q and mpn_div_qr_invert
+STATISTICS: merging mpz_tdiv_q and mpn_div_qr_invert arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpz_div_qr and mpn_div_qr_1_preinv
+STATISTICS: merging mpz_div_qr and mpn_div_qr_1_preinv arg size1: 5 arg size2: 4
+STATISTICS: fusion function arg size: 6
+merging mpn_div_qr_preinv and mpz_tdiv_r
+STATISTICS: merging mpn_div_qr_preinv and mpz_tdiv_r arg size1: 6 arg size2: 3
+STATISTICS: fusion function arg size: 7
+merging mpn_div_qr_pi1 and mpz_mod
+STATISTICS: merging mpn_div_qr_pi1 and mpz_mod arg size1: 7 arg size2: 3
+STATISTICS: fusion function arg size: 8
+merging mpz_fdiv_q_2exp and mpz_tdiv_q_2exp
+STATISTICS: merging mpz_fdiv_q_2exp and mpz_tdiv_q_2exp arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpz_div_q_2exp and mpz_divexact
+STATISTICS: merging mpz_div_q_2exp and mpz_divexact arg size1: 4 arg size2: 3
+STATISTICS: fusion function arg size: 5
+merging mpz_tdiv_q_ui and mpz_divisible_ui_p
+STATISTICS: merging mpz_tdiv_q_ui and mpz_divisible_ui_p arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging mpz_gcd and mpz_gcdext
+STATISTICS: merging mpz_gcd and mpz_gcdext arg size1: 3 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging mpz_abs_add_bit and mpz_abs_sub_bit
+STATISTICS: merging mpz_abs_add_bit and mpz_abs_sub_bit arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging mpz_powm and mpz_sizeinbase
+STATISTICS: merging mpz_powm and mpz_sizeinbase arg size1: 4 arg size2: 2
+STATISTICS: fusion function arg size: 5
+merging mpz_scan1 and mpz_get_str
+STATISTICS: merging mpz_scan1 and mpz_get_str arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpn_common_scan and mpn_get_str_other
+STATISTICS: merging mpn_common_scan and mpn_get_str_other arg size1: 5 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging mpn_limb_get_str and mpz_set_str
+STATISTICS: merging mpn_limb_get_str and mpz_set_str arg size1: 3 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging mpn_set_str_other and mpz_init_set_str
+STATISTICS: merging mpn_set_str_other and mpz_init_set_str arg size1: 5 arg size2: 3
+STATISTICS: fusion function arg size: 6
+merging mpz_out_str and read_file_system_list
+STATISTICS: merging mpz_out_str and read_file_system_list arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging free_mount_entry and rpl_nanosleep
+STATISTICS: merging free_mount_entry and rpl_nanosleep arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _obstack_begin and print_and_abort
+STATISTICS: merging _obstack_begin and print_and_abort arg size1: 5 arg size2: 0
+STATISTICS: fusion function arg size: 6
+merging _obstack_begin_1 and _obstack_newchunk
+STATISTICS: merging _obstack_begin_1 and _obstack_newchunk arg size1: 6 arg size2: 2
+STATISTICS: fusion function arg size: 7
+merging _obstack_allocated_p and _obstack_free
+STATISTICS: merging _obstack_allocated_p and _obstack_free arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging _obstack_memory_used and extract_trimmed_name
+STATISTICS: merging _obstack_memory_used and extract_trimmed_name arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging strncpy and read_utmp
+STATISTICS: merging strncpy and read_utmp arg size1: 3 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging rpl_re_compile_pattern and free_dfa_content
+STATISTICS: merging rpl_re_compile_pattern and free_dfa_content arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging re_compile_internal and free_state
+STATISTICS: merging re_compile_internal and free_state arg size1: 4 arg size2: 1
+STATISTICS: fusion function arg size: 5
+merging build_wcs_upper_buffer and build_wcs_buffer
+STATISTICS: merging build_wcs_upper_buffer and build_wcs_buffer arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging parse_reg_exp and lower_subexp
+STATISTICS: merging parse_reg_exp and lower_subexp arg size1: 6 arg size2: 3
+STATISTICS: fusion function arg size: 7
+merging calc_eclosure_iter and re_acquire_state_context
+STATISTICS: merging calc_eclosure_iter and re_acquire_state_context arg size1: 4 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging re_node_set_merge and register_state
+STATISTICS: merging re_node_set_merge and register_state arg size1: 2 arg size2: 3
+STATISTICS: fusion function arg size: 4
+merging duplicate_node_closure and parse_branch
+STATISTICS: merging duplicate_node_closure and parse_branch arg size1: 5 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging re_node_set_insert and parse_expression
+STATISTICS: merging re_node_set_insert and parse_expression arg size1: 2 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging parse_bracket_element and build_charclass
+STATISTICS: merging parse_bracket_element and build_charclass arg size1: 6 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging build_charclass_op and rpl_re_compile_fastmap
+STATISTICS: merging build_charclass_op and rpl_re_compile_fastmap arg size1: 6 arg size2: 1
+STATISTICS: fusion function arg size: 7
+merging re_compile_fastmap_iter and rpl_regfree
+STATISTICS: merging re_compile_fastmap_iter and rpl_regfree arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging re_search_internal and update_cur_sifted_state
+STATISTICS: merging re_search_internal and update_cur_sifted_state arg size1: 9 arg size2: 4
+STATISTICS: fusion function arg size: 10
+merging re_string_reconstruct and transit_state_bkref
+STATISTICS: merging re_string_reconstruct and transit_state_bkref arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging extend_buffers and check_node_accept_bytes
+STATISTICS: merging extend_buffers and check_node_accept_bytes arg size1: 2 arg size2: 4
+STATISTICS: fusion function arg size: 5
+merging re_node_set_init_union and build_trtable
+STATISTICS: merging re_node_set_init_union and build_trtable arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging merge_state_with_log and sift_states_backward
+STATISTICS: merging merge_state_with_log and sift_states_backward arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging re_acquire_state and match_ctx_clean
+STATISTICS: merging re_acquire_state and match_ctx_clean arg size1: 3 arg size2: 1
+STATISTICS: fusion function arg size: 4
+merging check_node_accept and check_dst_limits
+STATISTICS: merging check_node_accept and check_dst_limits arg size1: 3 arg size2: 6
+STATISTICS: fusion function arg size: 7
+merging check_dst_limits_calc_pos_1 and re_node_set_add_intersect
+STATISTICS: merging check_dst_limits_calc_pos_1 and re_node_set_add_intersect arg size1: 5 arg size2: 3
+STATISTICS: fusion function arg size: 6
+merging sub_epsilon_src_nodes and check_subexp_matching_top
+STATISTICS: merging sub_epsilon_src_nodes and check_subexp_matching_top arg size1: 4 arg size2: 3
+STATISTICS: fusion function arg size: 5
+merging get_subexp_sub and check_arrival_expand_ecl
+STATISTICS: merging get_subexp_sub and check_arrival_expand_ecl arg size1: 5 arg size2: 4
+STATISTICS: fusion function arg size: 6
+merging check_arrival and check_arrival_expand_ecl_sub
+STATISTICS: merging check_arrival and check_arrival_expand_ecl_sub arg size1: 7 arg size2: 5
+STATISTICS: fusion function arg size: 8
+merging expand_bkref_cache and rpl_re_match
+STATISTICS: merging expand_bkref_cache and rpl_re_match arg size1: 5 arg size2: 5
+STATISTICS: fusion function arg size: 6
+merging re_search_stub and str2sig
+STATISTICS: merging re_search_stub and str2sig arg size1: 8 arg size2: 2
+STATISTICS: fusion function arg size: 9
+merging rpl_re_search and sig2str
+STATISTICS: merging rpl_re_search and sig2str arg size1: 6 arg size2: 2
+STATISTICS: fusion function arg size: 7
+merging tzalloc and tzfree
+STATISTICS: merging tzalloc and tzfree arg size1: 1 arg size2: 1
+STATISTICS: fusion function arg size: 2
+merging localtime_rz and mktime_z
+STATISTICS: merging localtime_rz and mktime_z arg size1: 3 arg size2: 2
+STATISTICS: fusion function arg size: 4
+merging set_tz and save_abbr
+STATISTICS: merging set_tz and save_abbr arg size1: 1 arg size2: 2
+STATISTICS: fusion function arg size: 3
+merging c_strtod and c_strtold
+STATISTICS: merging c_strtod and c_strtold arg size1: 2 arg size2: 2
+STATISTICS: fusion function arg size: 3
+found 204 indirect calls
+STATISTICS: fusion ended, merged 1202 of 1219 functions

@@ -1,0 +1,6 @@
+/home/zsy/fusion_helper.o
+-r=/home/zsy/fusion_helper.o,extract_ptrval,pl
+-r=/home/zsy/fusion_helper.o,extract_ctrlbit,pl
+-r=/home/zsy/fusion_helper.o,extract_ctrlsign,pl
+/tmp/conftest-32e3ca.o
+-r=/tmp/conftest-32e3ca.o,main,plx

@@ -1,0 +1,4 @@
+/home/zsy/fusion_helper.o
+-r=/home/zsy/fusion_helper.o,extract_ptrval,pl
+-r=/home/zsy/fusion_helper.o,extract_ctrlbit,pl
+-r=/home/zsy/fusion_helper.o,extract_ctrlsign,pl

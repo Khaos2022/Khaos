@@ -1,0 +1,5 @@
+test-verify.o: test-verify.c ../lib/config.h ../lib/verify.h
+
+../lib/config.h:
+
+../lib/verify.h:
