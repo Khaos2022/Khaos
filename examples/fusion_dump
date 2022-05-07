@@ -1,0 +1,289 @@
+
+fusion:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000201000 <_start>:
+  201000:	f3 0f 1e fa          	endbr64 
+  201004:	31 ed                	xor    %ebp,%ebp
+  201006:	49 89 d1             	mov    %rdx,%r9
+  201009:	5e                   	pop    %rsi
+  20100a:	48 89 e2             	mov    %rsp,%rdx
+  20100d:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+  201011:	50                   	push   %rax
+  201012:	54                   	push   %rsp
+  201013:	4c 8d 05 46 01 00 00 	lea    0x146(%rip),%r8        # 201160 <__libc_csu_fini>
+  20101a:	48 8d 0d cf 00 00 00 	lea    0xcf(%rip),%rcx        # 2010f0 <__libc_csu_init>
+  201021:	48 8d 3d b8 01 00 00 	lea    0x1b8(%rip),%rdi        # 2011e0 <main>
+  201028:	ff 15 72 11 00 00    	callq  *0x1172(%rip)        # 2021a0 <__libc_start_main@GLIBC_2.2.5>
+  20102e:	f4                   	hlt    
+  20102f:	90                   	nop
+
+0000000000201030 <_dl_relocate_static_pie>:
+  201030:	f3 0f 1e fa          	endbr64 
+  201034:	c3                   	retq   
+  201035:	cc                   	int3   
+  201036:	cc                   	int3   
+  201037:	cc                   	int3   
+  201038:	cc                   	int3   
+  201039:	cc                   	int3   
+  20103a:	cc                   	int3   
+  20103b:	cc                   	int3   
+  20103c:	cc                   	int3   
+  20103d:	cc                   	int3   
+  20103e:	cc                   	int3   
+  20103f:	cc                   	int3   
+
+0000000000201040 <deregister_tm_clones>:
+  201040:	b8 10 30 20 00       	mov    $0x203010,%eax
+  201045:	48 3d 10 30 20 00    	cmp    $0x203010,%rax
+  20104b:	74 13                	je     201060 <deregister_tm_clones+0x20>
+  20104d:	b8 00 00 00 00       	mov    $0x0,%eax
+  201052:	48 85 c0             	test   %rax,%rax
+  201055:	74 09                	je     201060 <deregister_tm_clones+0x20>
+  201057:	bf 10 30 20 00       	mov    $0x203010,%edi
+  20105c:	ff e0                	jmpq   *%rax
+  20105e:	66 90                	xchg   %ax,%ax
+  201060:	c3                   	retq   
+  201061:	66 66 2e 0f 1f 84 00 	data16 nopw %cs:0x0(%rax,%rax,1)
+  201068:	00 00 00 00 
+  20106c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000201070 <register_tm_clones>:
+  201070:	be 10 30 20 00       	mov    $0x203010,%esi
+  201075:	48 81 ee 10 30 20 00 	sub    $0x203010,%rsi
+  20107c:	48 89 f0             	mov    %rsi,%rax
+  20107f:	48 c1 ee 3f          	shr    $0x3f,%rsi
+  201083:	48 c1 f8 03          	sar    $0x3,%rax
+  201087:	48 01 c6             	add    %rax,%rsi
+  20108a:	48 d1 fe             	sar    %rsi
+  20108d:	74 11                	je     2010a0 <register_tm_clones+0x30>
+  20108f:	b8 00 00 00 00       	mov    $0x0,%eax
+  201094:	48 85 c0             	test   %rax,%rax
+  201097:	74 07                	je     2010a0 <register_tm_clones+0x30>
+  201099:	bf 10 30 20 00       	mov    $0x203010,%edi
+  20109e:	ff e0                	jmpq   *%rax
+  2010a0:	c3                   	retq   
+  2010a1:	66 66 2e 0f 1f 84 00 	data16 nopw %cs:0x0(%rax,%rax,1)
+  2010a8:	00 00 00 00 
+  2010ac:	0f 1f 40 00          	nopl   0x0(%rax)
+
+00000000002010b0 <__do_global_dtors_aux>:
+  2010b0:	f3 0f 1e fa          	endbr64 
+  2010b4:	80 3d 85 1f 00 00 00 	cmpb   $0x0,0x1f85(%rip)        # 203040 <completed.8061>
+  2010bb:	75 13                	jne    2010d0 <__do_global_dtors_aux+0x20>
+  2010bd:	55                   	push   %rbp
+  2010be:	48 89 e5             	mov    %rsp,%rbp
+  2010c1:	e8 7a ff ff ff       	callq  201040 <deregister_tm_clones>
+  2010c6:	c6 05 73 1f 00 00 01 	movb   $0x1,0x1f73(%rip)        # 203040 <completed.8061>
+  2010cd:	5d                   	pop    %rbp
+  2010ce:	c3                   	retq   
+  2010cf:	90                   	nop
+  2010d0:	c3                   	retq   
+  2010d1:	66 66 2e 0f 1f 84 00 	data16 nopw %cs:0x0(%rax,%rax,1)
+  2010d8:	00 00 00 00 
+  2010dc:	0f 1f 40 00          	nopl   0x0(%rax)
+
+00000000002010e0 <frame_dummy>:
+  2010e0:	f3 0f 1e fa          	endbr64 
+  2010e4:	eb 8a                	jmp    201070 <register_tm_clones>
+  2010e6:	cc                   	int3   
+  2010e7:	cc                   	int3   
+  2010e8:	cc                   	int3   
+  2010e9:	cc                   	int3   
+  2010ea:	cc                   	int3   
+  2010eb:	cc                   	int3   
+  2010ec:	cc                   	int3   
+  2010ed:	cc                   	int3   
+  2010ee:	cc                   	int3   
+  2010ef:	cc                   	int3   
+
+00000000002010f0 <__libc_csu_init>:
+  2010f0:	f3 0f 1e fa          	endbr64 
+  2010f4:	41 57                	push   %r15
+  2010f6:	4c 8d 3d 0b 0f 00 00 	lea    0xf0b(%rip),%r15        # 202008 <__frame_dummy_init_array_entry>
+  2010fd:	41 56                	push   %r14
+  2010ff:	49 89 d6             	mov    %rdx,%r14
+  201102:	41 55                	push   %r13
+  201104:	49 89 f5             	mov    %rsi,%r13
+  201107:	41 54                	push   %r12
+  201109:	41 89 fc             	mov    %edi,%r12d
+  20110c:	55                   	push   %rbp
+  20110d:	48 8d 2d fc 0e 00 00 	lea    0xefc(%rip),%rbp        # 202010 <_DYNAMIC>
+  201114:	53                   	push   %rbx
+  201115:	4c 29 fd             	sub    %r15,%rbp
+  201118:	48 83 ec 08          	sub    $0x8,%rsp
+  20111c:	e8 07 01 00 00       	callq  201228 <_init>
+  201121:	48 c1 fd 03          	sar    $0x3,%rbp
+  201125:	74 1f                	je     201146 <__libc_csu_init+0x56>
+  201127:	31 db                	xor    %ebx,%ebx
+  201129:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+  201130:	4c 89 f2             	mov    %r14,%rdx
+  201133:	4c 89 ee             	mov    %r13,%rsi
+  201136:	44 89 e7             	mov    %r12d,%edi
+  201139:	41 ff 14 df          	callq  *(%r15,%rbx,8)
+  20113d:	48 83 c3 01          	add    $0x1,%rbx
+  201141:	48 39 dd             	cmp    %rbx,%rbp
+  201144:	75 ea                	jne    201130 <__libc_csu_init+0x40>
+  201146:	48 83 c4 08          	add    $0x8,%rsp
+  20114a:	5b                   	pop    %rbx
+  20114b:	5d                   	pop    %rbp
+  20114c:	41 5c                	pop    %r12
+  20114e:	41 5d                	pop    %r13
+  201150:	41 5e                	pop    %r14
+  201152:	41 5f                	pop    %r15
+  201154:	c3                   	retq   
+  201155:	66 66 2e 0f 1f 84 00 	data16 nopw %cs:0x0(%rax,%rax,1)
+  20115c:	00 00 00 00 
+
+0000000000201160 <__libc_csu_fini>:
+  201160:	f3 0f 1e fa          	endbr64 
+  201164:	c3                   	retq   
+  201165:	cc                   	int3   
+  201166:	cc                   	int3   
+  201167:	cc                   	int3   
+  201168:	cc                   	int3   
+  201169:	cc                   	int3   
+  20116a:	cc                   	int3   
+  20116b:	cc                   	int3   
+  20116c:	cc                   	int3   
+  20116d:	cc                   	int3   
+  20116e:	cc                   	int3   
+  20116f:	cc                   	int3   
+
+0000000000201170 <extract_ptrval>:
+  201170:	48 b8 f0 ff ff ff ff 	movabs $0xfffffffffff0,%rax
+  201177:	ff 00 00 
+  20117a:	48 21 f8             	and    %rdi,%rax
+  20117d:	c3                   	retq   
+  20117e:	cc                   	int3   
+  20117f:	cc                   	int3   
+
+0000000000201180 <extract_ctrlsign>:
+  201180:	48 89 f8             	mov    %rdi,%rax
+  201183:	c0 e8 03             	shr    $0x3,%al
+  201186:	24 01                	and    $0x1,%al
+  201188:	c3                   	retq   
+  201189:	cc                   	int3   
+  20118a:	cc                   	int3   
+  20118b:	cc                   	int3   
+  20118c:	cc                   	int3   
+  20118d:	cc                   	int3   
+  20118e:	cc                   	int3   
+  20118f:	cc                   	int3   
+
+0000000000201190 <extract_ctrlbit>:
+  201190:	48 89 f8             	mov    %rdi,%rax
+  201193:	c0 e8 02             	shr    $0x2,%al
+  201196:	24 01                	and    $0x1,%al
+  201198:	c3                   	retq   
+  201199:	cc                   	int3   
+  20119a:	cc                   	int3   
+  20119b:	cc                   	int3   
+  20119c:	cc                   	int3   
+  20119d:	cc                   	int3   
+  20119e:	cc                   	int3   
+  20119f:	cc                   	int3   
+
+00000000002011a0 <get_random>:
+  2011a0:	89 f8                	mov    %edi,%eax
+  2011a2:	24 01                	and    $0x1,%al
+  2011a4:	c3                   	retq   
+  2011a5:	cc                   	int3   
+  2011a6:	cc                   	int3   
+  2011a7:	cc                   	int3   
+  2011a8:	cc                   	int3   
+  2011a9:	cc                   	int3   
+  2011aa:	cc                   	int3   
+  2011ab:	cc                   	int3   
+  2011ac:	cc                   	int3   
+  2011ad:	cc                   	int3   
+  2011ae:	cc                   	int3   
+  2011af:	cc                   	int3   
+
+00000000002011b0 <barfooFusion>:
+  2011b0:	40 84 ff             	test   %dil,%dil
+  2011b3:	74 12                	je     2011c7 <barfooFusion+0x17>
+  2011b5:	40 f6 c7 01          	test   $0x1,%dil
+  2011b9:	74 1f                	je     2011da <barfooFusion+0x2a>
+  2011bb:	bf 4a 05 20 00       	mov    $0x20054a,%edi
+  2011c0:	31 c0                	xor    %eax,%eax
+  2011c2:	e9 a9 00 00 00       	jmpq   201270 <printf@plt>
+  2011c7:	0f bf f6             	movswl %si,%esi
+  2011ca:	f3 0f 5a c0          	cvtss2sd %xmm0,%xmm0
+  2011ce:	bf 53 05 20 00       	mov    $0x200553,%edi
+  2011d3:	b0 01                	mov    $0x1,%al
+  2011d5:	e9 96 00 00 00       	jmpq   201270 <printf@plt>
+  2011da:	90                   	nop
+  2011db:	cc                   	int3   
+  2011dc:	cc                   	int3   
+  2011dd:	cc                   	int3   
+  2011de:	cc                   	int3   
+  2011df:	cc                   	int3   
+
+00000000002011e0 <main>:
+  2011e0:	53                   	push   %rbx
+  2011e1:	bf 40 05 20 00       	mov    $0x200540,%edi
+  2011e6:	31 f6                	xor    %esi,%esi
+  2011e8:	ba 00 01 00 00       	mov    $0x100,%edx
+  2011ed:	31 c0                	xor    %eax,%eax
+  2011ef:	e8 8c 00 00 00       	callq  201280 <open@plt>
+  2011f4:	89 c3                	mov    %eax,%ebx
+  2011f6:	89 c7                	mov    %eax,%edi
+  2011f8:	31 c0                	xor    %eax,%eax
+  2011fa:	e8 91 00 00 00       	callq  201290 <close@plt>
+  2011ff:	f3 0f 10 05 31 f3 ff 	movss  -0xccf(%rip),%xmm0        # 200538 <_IO_stdin_used-0x4>
+  201206:	ff 
+  201207:	31 ff                	xor    %edi,%edi
+  201209:	be 34 12 00 00       	mov    $0x1234,%esi
+  20120e:	e8 9d ff ff ff       	callq  2011b0 <barfooFusion>
+  201213:	0f 57 c0             	xorps  %xmm0,%xmm0
+  201216:	bf 01 00 00 00       	mov    $0x1,%edi
+  20121b:	89 de                	mov    %ebx,%esi
+  20121d:	e8 8e ff ff ff       	callq  2011b0 <barfooFusion>
+  201222:	31 c0                	xor    %eax,%eax
+  201224:	5b                   	pop    %rbx
+  201225:	c3                   	retq   
+
+Disassembly of section .init:
+
+0000000000201228 <_init>:
+  201228:	f3 0f 1e fa          	endbr64 
+  20122c:	48 83 ec 08          	sub    $0x8,%rsp
+  201230:	48 8b 05 71 0f 00 00 	mov    0xf71(%rip),%rax        # 2021a8 <__gmon_start__@Base>
+  201237:	48 85 c0             	test   %rax,%rax
+  20123a:	74 02                	je     20123e <_init+0x16>
+  20123c:	ff d0                	callq  *%rax
+  20123e:	48 83 c4 08          	add    $0x8,%rsp
+  201242:	c3                   	retq   
+
+Disassembly of section .fini:
+
+0000000000201244 <_fini>:
+  201244:	f3 0f 1e fa          	endbr64 
+  201248:	48 83 ec 08          	sub    $0x8,%rsp
+  20124c:	48 83 c4 08          	add    $0x8,%rsp
+  201250:	c3                   	retq   
+
+Disassembly of section .plt:
+
+0000000000201260 <printf@plt-0x10>:
+  201260:	ff 35 b2 1d 00 00    	pushq  0x1db2(%rip)        # 203018 <__TMC_END__+0x8>
+  201266:	ff 25 b4 1d 00 00    	jmpq   *0x1db4(%rip)        # 203020 <__TMC_END__+0x10>
+  20126c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000201270 <printf@plt>:
+  201270:	ff 25 b2 1d 00 00    	jmpq   *0x1db2(%rip)        # 203028 <printf@GLIBC_2.2.5>
+  201276:	68 00 00 00 00       	pushq  $0x0
+  20127b:	e9 e0 ff ff ff       	jmpq   201260 <_fini+0x1c>
+
+0000000000201280 <open@plt>:
+  201280:	ff 25 aa 1d 00 00    	jmpq   *0x1daa(%rip)        # 203030 <open@GLIBC_2.2.5>
+  201286:	68 01 00 00 00       	pushq  $0x1
+  20128b:	e9 d0 ff ff ff       	jmpq   201260 <_fini+0x1c>
+
+0000000000201290 <close@plt>:
+  201290:	ff 25 a2 1d 00 00    	jmpq   *0x1da2(%rip)        # 203038 <close@GLIBC_2.2.5>
+  201296:	68 02 00 00 00       	pushq  $0x2
+  20129b:	e9 c0 ff ff ff       	jmpq   201260 <_fini+0x1c>
